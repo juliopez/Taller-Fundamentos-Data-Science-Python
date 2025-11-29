@@ -132,8 +132,8 @@ Material asociado al taller integrador:
 ### 1. Clonar o descargar el repositorio
 
 ```bash
-git clone https://github.com/USUARIO/curso-ciencia-de-datos-IA-2025.git
-cd curso-ciencia-de-datos-IA-2025
+git clone https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python.git
+cd Taller-Fundamentos-Data-Science-Python
 ```
 ### 2. Abrir los notebooks
 
