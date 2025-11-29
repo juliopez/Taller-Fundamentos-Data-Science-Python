@@ -36,11 +36,13 @@ Al finalizar el taller, las y los participantes serán capaces de:
 ## Estructura de carpetas del repositorio
 
 ```text
-curso-ciencia-de-datos-IA-2025/
+Taller-Fundamentos-Data-Science-Python/
 │
 ├── README.md
 ├── LICENSE
 │
+├── 00_Documentacion/
+│   └── Descriptor-Taller.pdf
 ├── 01_Presentaciones/
 │   ├── Sesion1_Introduccion_Python.pdf
 │   ├── Sesion2_EDA.pdf
