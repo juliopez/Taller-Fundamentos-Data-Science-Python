@@ -1,0 +1,211 @@
+ID,Nombre,Edad,Carrera,Seccion,Nota_Final,Asistencia_%,Aprobado
+1,Estudiante1,36,Ingeniería,C,5.4,73.0,True
+2,Estudiante2,30,Ingeniería,A,5.8,75.0,True
+3,Estudiante3,21,Física,A,5.7,88.0,True
+4,Estudiante4,37,Computación,A,3.5,79.0,False
+5,Estudiante5,30,Computación,B,6.8,90.0,True
+6,Estudiante6,18, Educación  ,B,"4,8",67.0,True
+7,Estudiante7,23,Computación,B,,86%,False
+8,Estudiante8,28,Ingeniería,B,5.0,60.0,True
+9,Estudiante9,32,Computación,A,3.2,90.0,False
+10, Estudiante10 ,19,Química,A,3.0,89%,False
+11,Estudiante11,26,Física,A,5.1,98.0,True
+12,Estudiante12,23,Ingeniería,A,5.0,99.0,True
+13,Estudiante13,23,Ingeniería,A,6.3,59.0,True
+14,Estudiante14,33,Educación,B,"4,1",64.0,True
+15,Estudiante15,38,Computación,C,3.4,69.0,False
+16,Estudiante16,34,Física,B,4.8,96.0,True
+17,Estudiante17,18,,B,6.7,63.0,True
+18,Estudiante18,39,Ingeniería,A,3.5,75%,False
+19,Estudiante19,21,Física,B,3.4,82.0,False
+20,Estudiante20,22,Física,C,3.3,89.0,False
+21,Estudiante21,35,Química,A,"4,6",71.0,True
+22,Estudiante22,34,Educación,B,6.9,,True
+23,Estudiante23,29,Matemática,B,5.6,52.0,True
+24,Estudiante24,31,Física,C,5.0,60.0,True
+25,Estudiante25,18,Computación,B,3.7,58.0,False
+26,Estudiante26,19,Química,A,3.1,62.0,False
+27,Estudiante27,27,Educación,B,6.6,56.0,True
+28,Estudiante28,31,Educación,A,6.3,59.0,True
+29,Estudiante29,37,Computación,B,,99.0,True
+30,Estudiante30,27,Ingeniería,C,4.9,90.0,True
+31, Estudiante31 ,28,Computación,A,3.3,82.0,False
+32,Estudiante32,22,Química,A,5.5,88.0,True
+33,Estudiante33,28,Química,B,4.8,74.0,True
+34,Estudiante34,28,Física,B,5.9,50.0,True
+35,Estudiante35,33,Ingeniería,B,5.2,56.0,True
+36,Estudiante36,39, Nan  ,A,5.8,71.0,True
+37,Estudiante37,23,Ingeniería,B,6.7,99.0,True
+38,Estudiante38,28,Computación,A,3.2,82.0,False
+39,Estudiante39,38,Física,A,5.0,65.0,True
+40,Estudiante40,27,Física,B,5.2,82.0,True
+41,Estudiante41,23,Educación,C,4.7,88%,True
+42,Estudiante42,39,Química,C,6.3,56.0,True
+43,Estudiante43,38,Matemática,C,6.5,81.0,True
+44,Estudiante44,35,Matemática,B,4.3,77.0,True
+45,Estudiante45,23,Educación,C,3.9,90.0,False
+46,Estudiante46,38,Física,C,4.4,70.0,True
+47,Estudiante47,25,Química,C,"4,3",96.0,True
+48,Estudiante48,24,,B,6.7,68.0,True
+49,Estudiante49,26,Química,C,5.6,75.0,True
+50,Estudiante50,31,Computación,C,,55.0,True
+51,Estudiante51,33,Física,B,4.3,88.0,True
+52,Estudiante52,36,Ingeniería,A,4.8,,True
+53,Estudiante53,26,Computación,B,6.2,69%,True
+54,Estudiante54,33,Física,B,NA,97.0,True
+55,Estudiante55,25,Computación,A,6.2,86.0,True
+56,Estudiante56,39,Física,A,4.0,69.0,True
+57,Estudiante57,36,Computación,A,3.9,86.0,False
+58,Estudiante58,27,Física,C,9.0,94.0,True
+59,Estudiante59,18,Ingeniería,B,4.9,68.0,True
+60,Estudiante60,20,Educación,A,5.7,,True
+61,Estudiante61,22,Matemática,A,5.3,68.0,True
+62,Estudiante62,18,Computación,B,5.5,94.0,True
+63,Estudiante63,20,Física,B,NA,86.0,True
+64,Estudiante64,34,Computación,B,6.6,83.0,True
+65,Estudiante65,35,Computación,A,6.6,69.0,True
+66,Estudiante66,33,Computación,A,6.9,54.0,True
+67,Estudiante67,22,Educación,A,5.4,88.0,True
+68,Estudiante68,37,Física,A,3.2,82.0,False
+69,Estudiante69,24,Física,C,6.5,99.0,True
+70,Estudiante70,29,Física,A,6.1,58.0,True
+71,Estudiante71,21,Física,B,6.7,65.0,True
+72,Estudiante72,22,Educación,A,6.2,56.0,True
+73, Estudiante73 ,32,Matemática,B,5.4,73.0,True
+74,Estudiante74,18,Física,A,5.6,78.0,True
+75,Estudiante75,22,Educación,B,6.9,74.0,True
+76,Estudiante76,30,Ingeniería,B,3.9,78.0,False
+77,Estudiante77,39,Matemática,A,3.7,84.0,False
+78,Estudiante78,27,Educación,A,5.8,98.0,True
+79,Estudiante79,36,Educación,B,5.7,50.0,True
+80,Estudiante80,18,Computación,A,5.8,95.0,True
+81,Estudiante81,18,Química,B,3.2,80.0,False
+82,Estudiante82,31,Ingeniería,A,4.9,98.0,True
+83,Estudiante83,19,Química,A,4.7,,True
+84,Estudiante84,25,Química,B,5.6,50.0,True
+85,Estudiante85,30,Matemática,B,7.0,91.0,True
+86,Estudiante86,25,Ingeniería,B,4.7,71.0,True
+87,Estudiante87,28,Matemática,C,6.9,51.0,True
+88, Estudiante88 ,32,Computación,B,5.4,71.0,True
+89,Estudiante89,21,Matemática,A,3.7,96.0,False
+90,Estudiante90,39,Ingeniería,A,NA,81.0,False
+91,Estudiante91,36,Educación,C,,50.0,False
+92,Estudiante92,34,Física,A,5.3,94.0,True
+93,Estudiante93,29,Educación,A,NA,50.0,False
+94,Estudiante94,26,Física,B,5.4,78.0,True
+95,Estudiante95,21,Química,C,5.5,69.0,True
+96,Estudiante96,21,Matemática,C,3.0,86.0,False
+97,Estudiante97,31,Física,B,4.2,57.0,True
+98,Estudiante98,25,Ingeniería,C,NA,51.0,True
+99,Estudiante99,24,Ingeniería,A,,73.0,True
+100,Estudiante100,39,Ingeniería,B,3.7,66.0,False
+101,Estudiante101,29,Computación,C,4.3,59.0,True
+102, Estudiante102 ,18,Educación,B,5.4,85.0,True
+103,Estudiante103,33,Educación,A,5.1,75.0,True
+104,Estudiante104,39, Química  ,A,5.2,59.0,True
+105,Estudiante105,32,Ingeniería,C,4.4,s/d,True
+106,Estudiante106,26,Ingeniería,C,3.3,52.0,False
+107, Estudiante107 ,23,Matemática,B,4.8,99.0,True
+108,Estudiante108,26,Computación,B,6.6,95.0,True
+109,Estudiante109,29,Química,A,6.8,91.0,True
+110,Estudiante110,27, Química  ,B,3.4,84.0,False
+111,Estudiante111,29,Química,C,6.9,60.0,True
+112,Estudiante112,29,Educación,B,4.2,88.0,True
+113,Estudiante113,31,Matemática,A,8.1,84.0,True
+114,Estudiante114,36,Química,B,6.8,50.0,True
+115,Estudiante115,25,Ingeniería,A,6.1,58.0,True
+116,Estudiante116,29,Computación,A,4.1,81.0,True
+117,Estudiante117,27,Química,C,4.9,51.0,True
+118,Estudiante118,35,Matemática,A,6.1,75.0,True
+119,Estudiante119,37,Ingeniería,A,5.4,75.0,True
+120,Estudiante120,29,Educación,A,3.2,64.0,False
+121,Estudiante121,24,Química,C,6.9,89.0,True
+122,Estudiante122,22,Educación,C,5.9,54.0,True
+123,Estudiante123,24,Química,B,6.7,79.0,True
+124,Estudiante124,26,Física,A,6.8,90.0,True
+125,Estudiante125,37,Ingeniería,B,3.3,87.0,False
+126,Estudiante126,39, Educación  ,C,3.1,67.0,False
+127,Estudiante127,31,Física,A,6.9,84.0,True
+128,Estudiante128,28,Ingeniería,C,3.9,71.0,False
+129,Estudiante129,28,Educación,B,5.0,94.0,True
+130,Estudiante130,37,Computación,B,4.2,s/d,True
+131,Estudiante131,19,Computación,A,4.4,76.0,True
+132,Estudiante132,31,Química,C,5.0,56.0,True
+133,Estudiante133,25,Matemática,A,4.1,63.0,True
+134, Estudiante134 ,22,Ingeniería,B,3.1,81.0,False
+135, Estudiante135 ,24,Educación,A,"3,4",76.0,False
+136,Estudiante136,25,Ingeniería,A,0.8,76.0,True
+137,Estudiante137,23,Física,A,3.9,72.0,False
+138,Estudiante138,39,Matemática,C,6.7,58.0,True
+139,Estudiante139,25, Educación  ,A,4.3,56.0,True
+140,Estudiante140,26,Computación,A,4.9,89.0,True
+141,Estudiante141,33,Matemática,B,4.1,70.0,True
+142,Estudiante142,31,Química,B,6.1,96.0,True
+143,Estudiante143,20,Física,B,5.7,54.0,True
+144,Estudiante144,22, Física  ,C,3.0,93.0,False
+145,Estudiante145,31,Educación,B,6.1,92.0,True
+146,Estudiante146,21,Educación,C,,63.0,True
+147,Estudiante147,32, Educación  ,C,4.4,94.0,True
+148,Estudiante148,30, Computación  ,A,-1.0,96.0,False
+149,Estudiante149,21,Educación,A,4.4,91.0,True
+150,Estudiante150,34, Ingeniería  ,B,4.4,59.0,True
+151,Estudiante151,38,Ingeniería,B,3.8,s/d,False
+152,Estudiante152,22,Matemática,C,6.0,82.0,True
+153,Estudiante153,30,Educación,A,3.0,53.0,False
+154,Estudiante154,24,Física,C,5.6,84.0,True
+155,Estudiante155,22,Ingeniería,B,3.6,50.0,False
+156,Estudiante156,27,Física,C,NA,57.0,True
+157,Estudiante157,22,Ingeniería,A,4.7,61.0,True
+158,Estudiante158,29,Química,B,7.5,65.0,True
+159, Estudiante159 ,31,Educación,A,3.7,78.0,False
+160,Estudiante160,28,,A,3.8,68.0,False
+161,Estudiante161,27,Matemática,B,4.6,60.0,True
+162,Estudiante162,26,Física,A,NA,68.0,True
+163,Estudiante163,38,Educación,B,,,True
+164,Estudiante164,31,Matemática,A,6.9,,True
+165,Estudiante165,39,Química,A,6.3,73.0,True
+166,Estudiante166,21,Química,A,3.1,86.0,False
+167,Estudiante167,33, Matemática  ,B,6.7,82.0,True
+168,Estudiante168,23,Física,C,4.1,72.0,True
+169,Estudiante169,38,Ingeniería,B,6.3,80.0,True
+170,Estudiante170,26,Computación,A,4.4,72.0,True
+171,Estudiante171,31,Química,A,5.8,57.0,True
+172,Estudiante172,26,Computación,A,3.5,71.0,False
+173,Estudiante173,20,Computación,A,4.7,86.0,True
+174,Estudiante174,32,Educación,A,4.8,73.0,True
+175,Estudiante175,20,Física,A,4.5,55.0,True
+176,Estudiante176,34,Química,A,6.9,63.0,True
+177,Estudiante177,32,Química,B,3.1,67.0,False
+178,Estudiante178,21,Matemática,C,3.9,83.0,False
+179,Estudiante179,19,Matemática,C,4.3,80.0,True
+180,Estudiante180,28,Computación,A,5.1,81.0,True
+181,Estudiante181,38,Ingeniería,A,4.2,65.0,True
+182,Estudiante182,29,Física,A,4.6,98.0,True
+183,Estudiante183,32,Química,A,3.2,57.0,False
+184,Estudiante184,33,Ingeniería,A,4.7,51.0,True
+185,Estudiante185,30,Física,B,,71.0,True
+186,Estudiante186,27,Educación,A,3.8,77.0,False
+187,Estudiante187,27,Matemática,A,6.0,72.0,True
+188,Estudiante188,38,Ingeniería,B,,62.0,True
+189,Estudiante189,19,Matemática,A,4.8,84.0,True
+190,Estudiante190,38,Matemática,B,6.0,98.0,True
+191,Estudiante191,32, Ingeniería  ,C,5.0,67.0,True
+192,Estudiante192,19,Química,A,3.1,63.0,False
+193,Estudiante193,32,Matemática,A,3.9,51%,False
+194,Estudiante194,30,Física,B,6.9,52.0,True
+195,Estudiante195,22,Computación,A,3.7,52.0,False
+196,Estudiante196,28,Educación,C,1.2,89.0,False
+197,Estudiante197,34,Educación,C,6.4,77.0,True
+198,Estudiante198,25,Computación,A,5.2,79.0,True
+199,Estudiante199,37,Física,A,3.4,53.0,False
+200,Estudiante200,25,Educación,B,3.5,63.0,False
+60,Estudiante60,20,Educación,A,5.7,s/d,True
+6,Estudiante6,18,Educación,B,4.8,67.0,True
+21,Estudiante21,35,Química,A,4.6,71.0,True
+199,Estudiante199,37,Física,A,3.4,53.0,False
+53,Estudiante53,26,Computación,B,6.2,69.0,True
+20,Estudiante20,22,Física,C,3.3,89.0,False
+163, Estudiante163 ,38,Educación,B,,,True
+56,Estudiante56,39,Física,A,4.0,69.0,True
+70,Estudiante70,29,Física,A,6.1,58.0,True
+3,Estudiante3,21,Física,A,5.7,88.0,True
