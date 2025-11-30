@@ -1,7 +1,7 @@
 ---
 
 layout: default
-title: Sesiones del taller
+title: Materiales del taller
 description: Accede a los notebooks base, datasets de práctica, presentaciones y recursos descargables utilizados durante el taller.
 
 ---
