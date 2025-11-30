@@ -121,19 +121,3 @@ Carpeta general: `06_Actividad_Final/` [Abrir en GitHub](https://github.com/juli
 
 El código del repositorio se distribuye bajo licencia **MIT** y los materiales (documentos, presentaciones) bajo licencia **Creative Commons BY-SA 4.0**, según lo indicado en el archivo `LICENSE` del repositorio.
 
-<hr>
-
-<footer class="udla-footer">
-  <p><strong>Taller Fundamentos de Data Science con Python</strong></p>
-  <p>
-    Facultad de Ingeniería y Negocios<br>
-    Universidad de Las Américas · Diciembre 2025
-  </p>
-  <p class="udla-footer-small">
-    Materiales disponibles en el repositorio:
-    <a href="https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python" target="_blank">
-      github.com/juliopez/Taller-Fundamentos-Data-Science-Python
-    </a>
-  </p>
-</footer>
-
