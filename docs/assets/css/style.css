@@ -70,3 +70,30 @@ nav a {
   padding: 5px 10px;
 }
 
+/* Menú superior estilo UDLA */
+nav {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+nav a {
+  color: var(--udla-orange) !important;
+  padding: 6px 12px;
+}
+
+nav a:hover {
+  background-color: var(--udla-orange);
+  color: #fff !important;
+  border-radius: 4px;
+}
+/* Centrar contenedor principal */
+.main-content {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Separación suave entre títulos */
+h2 {
+  margin-top: 40px;
+}
