@@ -11,6 +11,16 @@ description: Bienvenido al sitio del taller Fundamentos de Data Science con Pyth
   <a href="sesiones">Sesiones</a> |
   <a href="materiales">Materiales</a>
 </nav>
+<script>
+  /* Detectar página activa */
+  const path = window.location.pathname;
+
+  document.querySelectorAll('.main-nav .nav-link').forEach(link => {
+    if (path.includes(link.getAttribute('href'))) {
+      link.classList.add('active');
+    }
+  });
+</script>
 
 
 
