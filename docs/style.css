@@ -92,31 +92,38 @@ nav a {
   color: #b84b12;
 }
 
-/* Ocultar header por defecto del tema Cayman */
+/* ===== MODIFICAR HEADER ORIGINAL (TEMA CAYMAN) ===== */
+
 .page-header {
-  display: none !important;
+  background-color: var(--udla-orange) !important;
+  padding: 20px 10px !important;
+  text-align: center !important;
 }
 
-/* ===== Header personalizado UDLA ===== */
-.custom-header {
-  background-color: var(--udla-orange);
-  color: #ffffff;
-  padding: 16px 20px;
-  text-align: center;
-  border-radius: 8px 8px 0 0;
-  margin-bottom: 20px;
+.page-header .project-name {
+  color: #ffffff !important;
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  margin: 0 !important;
 }
 
-.custom-header h1 {
-  margin: 0;
-  font-size: 26px;
-  font-weight: 700;
+.page-header .project-tagline {
+  color: #ffffff !important;
+  font-size: 18px !important;
+  font-weight: 300 !important;
+  margin: 6px 0 10px 0 !important;
 }
 
-.custom-header p {
-  margin: 4px 0 0 0;
-  font-size: 14px;
-  font-weight: 400;
+.page-header .btn {
+  color: #ffffff !important;
+  border: 1px solid rgba(255,255,255,0.5) !important;
+  background: transparent !important;
+  margin-top: 10px !important;
 }
+
+.page-header .btn:hover {
+  background: rgba(255,255,255,0.2) !important;
+}
+
 
 
