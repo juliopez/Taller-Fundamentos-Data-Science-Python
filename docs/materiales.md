@@ -1,5 +1,9 @@
 ---
-title: Materiales del taller
+
+layout: default
+title: Sesiones del taller
+description: Accede a los notebooks base, datasets de práctica, presentaciones y recursos descargables utilizados durante el taller.
+
 ---
 
 <nav style="text-align:center; font-size:18px; margin-bottom: 25px;">
