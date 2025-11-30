@@ -2,7 +2,24 @@
 title: Inicio
 ---
 
-[Inicio](index.md) · [Sesiones](sesiones.md) · [Materiales](materiales.md)
+<nav style="text-align:center; font-size:18px; margin-bottom: 25px;">
+  <a href="index" style="color:#003366; font-weight:600;"
+     onmouseover="this.style.color='#FFCC00'"
+     onmouseout="this.style.color='#003366'">
+     Inicio
+  </a> |
+  <a href="sesiones" style="color:#003366; font-weight:600;"
+     onmouseover="this.style.color='#FFCC00'"
+     onmouseout="this.style.color='#003366'">
+     Sesiones
+  </a> |
+  <a href="materiales" style="color:#003366; font-weight:600;"
+     onmouseover="this.style.color='#FFCC00'"
+     onmouseout="this.style.color='#003366'">
+     Materiales
+  </a>
+</nav>
+
 
 # Fundamentos de Data Science con Python
 
