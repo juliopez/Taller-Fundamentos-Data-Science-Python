@@ -39,18 +39,20 @@ a:hover {
 }
 
 /* Encabezado superior (tema Cayman) */
+/* Header UDLA actual (mismo que ya tenías, pero centrado) */
 header {
   background-color: var(--udla-orange) !important;
+  padding: 16px 10px !important;
 }
 
-header h1, header h2 {
-  color: #FFFFFF !important;
+/* Centrar los títulos dentro del header */
+header h1,
+header h2 {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
-/* Links dentro del header */
-header a {
-  color: #FFFFFF !important;
-}
 
 /* Línea divisoria */
 hr {
