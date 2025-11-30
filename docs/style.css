@@ -1,0 +1,140 @@
+/* ===== Colores estilo UDLA ===== */
+:root {
+  --udla-orange: #F36F21;   /* Naranjo UDLA */
+  --udla-dark:   #333333;   /* Gris oscuro para texto */
+  --udla-light:  #F5F5F5;   /* Fondo suave */
+}
+
+/* Fondo general del sitio */
+body {
+  background-color: var(--udla-light);
+  color: var(--udla-dark);
+}
+
+/* Contenedor principal del contenido */
+.main-content {
+  background: #FFFFFF;
+  padding: 35px;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+  color: var(--udla-orange);
+  font-weight: 700;
+}
+
+/* Enlaces */
+a {
+  color: var(--udla-orange);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #b84b12; /* naranjo más oscuro */
+  text-decoration: underline;
+}
+
+/* Encabezado superior (tema Cayman) */
+header {
+  background-color: var(--udla-orange) !important;
+}
+
+header h1, header h2 {
+  color: #FFFFFF !important;
+}
+
+/* Links dentro del header */
+header a {
+  color: #FFFFFF !important;
+}
+
+/* Línea divisoria */
+hr {
+  border-top: 2px solid var(--udla-orange);
+}
+
+/* Cajas de código */
+pre, code {
+  background-color: #EFEFEF;
+  border-radius: 6px;
+  padding: 4px 6px;
+}
+
+/* Navegación estilo menú */
+nav a {
+  margin: 0 10px;
+  padding: 5px 10px;
+}
+
+/* ===== Footer UDLA ===== */
+.udla-footer {
+  margin-top: 40px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-top: 2px solid var(--udla-orange);
+  font-size: 14px;
+  text-align: center;
+  color: var(--udla-dark);
+}
+
+.udla-footer a {
+  color: var(--udla-orange);
+  font-weight: 600;
+}
+
+.udla-footer a:hover {
+  color: #b84b12;
+}
+
+.udla-footer-small {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* ===== HEADER PROFESIONAL UDLA ===== */
+
+/* Fondo UDLA */
+header {
+  background-color: var(--udla-orange) !important;
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+  text-align: center !important;
+}
+
+/* Título principal */
+header h1 {
+  color: #ffffff !important;
+  font-size: 38px !important;
+  font-weight: 700 !important;
+  margin-bottom: 10px !important;
+}
+
+/* Subtítulo */
+header h2 {
+  color: #ffffff !important;
+  font-size: 20px !important;
+  margin-top: 0px !important;
+  margin-bottom: 5px !important;
+  font-weight: 400 !important;
+}
+
+/* Enlace "View on GitHub" */
+header .btn {
+  background: rgba(255,255,255,0.25) !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 6px 12px !important;
+  border-radius: 6px !important;
+  font-size: 14px !important;
+  margin-top: 10px !important;
+}
+
+header .btn:hover {
+  background: rgba(0,0,0,0.25) !important;
+  color: #fff !important;
+}
+
