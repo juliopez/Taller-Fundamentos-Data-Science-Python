@@ -1,7 +1,7 @@
 ---
 
 layout: default
-title: Sesiones del taller
+title: Inicio
 description: Bienvenido al sitio del taller Fundamentos de Data Science con Python. Aquí encontrarás materiales, notebooks, recursos y toda la información necesaria para participar en las sesiones.
 
 ---
