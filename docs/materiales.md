@@ -30,6 +30,8 @@ En esta página se agrupan los principales recursos disponibles en el repositori
 
 - Descriptor del taller:  
   `00_Documentacion/Descriptor-Taller.pdf`
+  
+Carpeta general: `00_Documentacion/` [Abrir en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/tree/main/00_Documentacion)
 
 ---
 
@@ -48,6 +50,8 @@ En esta página se agrupan los principales recursos disponibles en el repositori
 - Sesión 6 — Proyecto Integrador  
   `01_Presentaciones/Sesion6_Proyecto-Final.pdf`
 
+Carpeta general: `01_Presentaciones/` [Abrir en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/tree/main/01_Presentaciones)
+
 ---
 
 ## Datasets de práctica
@@ -61,7 +65,7 @@ Datasets en formato CSV para trabajar en las practicas:
 - `02_Datasets/Ejemplo1.csv`
 - `02_Datasets/Ejemplo2.csv`
 
-Carpeta general: `02_Datasets/`
+Carpeta general: `02_Datasets/` [Abrir en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/tree/main/02_Datasets)
 
 ---
 
@@ -80,7 +84,7 @@ Notebooks sugeridos para trabajar durante las sesiones:
 - Sesión 5 — CNN, Transfer Learning y Ética en IA [`05_Sesion_05.ipynb` en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/02_Sesion_02.ipynb)  
   [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/05_Sesion_05.ipynb)
 
-Carpeta general: `03_Notebooks/`
+Carpeta general: `03_Notebooks/` [Abrir en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/tree/main/03_Notebooks)
 
 ---
 
@@ -94,7 +98,7 @@ Ejercicios adicionales para profundizar:
 - `04_Ejercicios_Practicos/04_Sesion4_Guion_Practica.ipynb`
 - `04_Ejercicios_Practicos/05_Sesion5_Guion_Practica.ipynb`
 
-Carpeta general: `04_Ejercicios_Practicos/`
+Carpeta general: `04_Ejercicios_Practicos/` [Abrir en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/tree/main/04_Ejercicios_Practicos)
 
 ---
 
@@ -109,7 +113,7 @@ Incluye:
 - Notebook base del proyecto. [`Taller_Integrador_STEM_PLANTILLA.ipynb` en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/06_Actividad_Final/Taller_Integrador_STEM_PLANTILLA.ipynb)  
   [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/06_Actividad_Final/Taller_Integrador_STEM_PLANTILLA.ipynb)
 
-Carpeta general: `06_Actividad_Final/`
+Carpeta general: `06_Actividad_Final/` [Abrir en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/tree/main/06_Actividad_Final)
 
 ---
 
