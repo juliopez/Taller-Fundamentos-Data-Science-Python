@@ -2,23 +2,19 @@
 title: Materiales del taller
 ---
 
+<div class="custom-header">
+  <h1>Materiales del taller</h1>
+  <p>Datasets, notebooks y presentaciones · Fundamentos de Data Science con Python</p>
+</div>
+
 <nav style="text-align:center; font-size:18px; margin-bottom: 25px;">
-  <a href="index" style="color:#003366; font-weight:600;"
-     onmouseover="this.style.color='#FFCC00'"
-     onmouseout="this.style.color='#003366'">
-     Inicio
-  </a> |
-  <a href="sesiones" style="color:#003366; font-weight:600;"
-     onmouseover="this.style.color='#FFCC00'"
-     onmouseout="this.style.color='#003366'">
-     Sesiones
-  </a> |
-  <a href="materiales" style="color:#003366; font-weight:600;"
-     onmouseover="this.style.color='#FFCC00'"
-     onmouseout="this.style.color='#003366'">
-     Materiales
-  </a>
+  <a href="index">Inicio</a> |
+  <a href="sesiones">Sesiones</a> |
+  <a href="materiales">Materiales</a>
 </nav>
+
+
+
 
 # Materiales del taller
 

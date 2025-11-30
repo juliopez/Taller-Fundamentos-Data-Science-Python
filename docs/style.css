@@ -92,5 +92,31 @@ nav a {
   color: #b84b12;
 }
 
+/* Ocultar header por defecto del tema Cayman */
+.page-header {
+  display: none !important;
+}
+
+/* ===== Header personalizado UDLA ===== */
+.custom-header {
+  background-color: var(--udla-orange);
+  color: #ffffff;
+  padding: 16px 20px;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 20px;
+}
+
+.custom-header h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.custom-header p {
+  margin: 4px 0 0 0;
+  font-size: 14px;
+  font-weight: 400;
+}
 
 
