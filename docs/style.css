@@ -95,46 +95,6 @@ nav a {
   margin-top: 5px;
 }
 
-/* ===== CABECERA SIMPLE UDLA ===== */
-header {
-  background-color: var(--udla-orange) !important;
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
-  text-align: center !important;
-}
-
-/* Título pequeño y limpio */
-header h1 {
-  color: #ffffff !important;
-  font-size: 26px !important;
-  font-weight: 600 !important;
-  margin: 0 !important;
-}
-
-/* Subtítulo aún más discreto */
-header h2 {
-  color: #ffffff !important;
-  font-size: 14px !important;
-  margin: 2px 0 0 0 !important;
-  font-weight: 400 !important;
-}
-
-/* Botón "View on GitHub" más discreto */
-header .btn {
-  background: transparent !important;
-  border: 1px solid rgba(255,255,255,0.6) !important;
-  color: #ffffff !important;
-  padding: 3px 8px !important;
-  border-radius: 4px !important;
-  font-size: 12px !important;
-  margin-top: 6px !important;
-}
-
-header .btn:hover {
-  background: rgba(255,255,255,0.15) !important;
-  color: #ffffff !important;
-}
-
 /* ===== FOOTER ESTÁNDAR LIMPIO ===== */
 .site-footer {
   font-size: 13px;
@@ -154,6 +114,48 @@ header .btn:hover {
 
 .site-footer a:hover {
   color: #b84b12;
+}
+
+/* ===== CABECERA SIMPLE UDLA (para tema Cayman) ===== */
+
+/* Contenedor de la cabecera */
+.page-header {
+  background-color: var(--udla-orange) !important;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+  text-align: center !important;
+}
+
+/* Título de la página (h1) */
+.project-name {
+  color: #ffffff !important;
+  font-size: 26px !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
+}
+
+/* Subtítulo (h2) */
+.project-tagline {
+  color: #ffffff !important;
+  font-size: 14px !important;
+  margin: 2px 0 0 0 !important;
+  font-weight: 400 !important;
+}
+
+/* Botón "View on GitHub" */
+.page-header .btn {
+  background: transparent !important;
+  border: 1px solid rgba(255,255,255,0.7) !important;
+  color: #ffffff !important;
+  padding: 3px 10px !important;
+  border-radius: 4px !important;
+  font-size: 12px !important;
+  margin-top: 6px !important;
+}
+
+.page-header .btn:hover {
+  background: rgba(255,255,255,0.15) !important;
+  color: #ffffff !important;
 }
 
 
