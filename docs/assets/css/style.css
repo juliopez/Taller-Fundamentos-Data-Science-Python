@@ -129,3 +129,39 @@ header a {
 header a:hover {
   color: #FFEECC !important;
 }
+
+/* ===== Barra de navegación fija (sticky) ===== */
+.main-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 0;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+/* Estilo base de los enlaces */
+.main-nav .nav-link {
+  margin: 0 12px;
+  color: var(--udla-orange);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover en UDLA */
+.main-nav .nav-link:hover {
+  color: #b84b12;
+}
+
+/* ===== Página activa ===== */
+.main-nav .nav-link.active {
+  background-color: var(--udla-orange);
+  color: white !important;
+  padding: 4px 8px;
+}
