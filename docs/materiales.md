@@ -6,23 +6,12 @@ description: Accede a los notebooks base, datasets de práctica, presentaciones 
 
 ---
 
-<nav style="text-align:center; font-size:18px; margin-bottom: 25px;">
-  <a href="index" style="color:#003366; font-weight:600;"
-     onmouseover="this.style.color='#FFCC00'"
-     onmouseout="this.style.color='#003366'">
-     Inicio
-  </a> |
-  <a href="sesiones" style="color:#003366; font-weight:600;"
-     onmouseover="this.style.color='#FFCC00'"
-     onmouseout="this.style.color='#003366'">
-     Sesiones
-  </a> |
-  <a href="materiales" style="color:#003366; font-weight:600;"
-     onmouseover="this.style.color='#FFCC00'"
-     onmouseout="this.style.color='#003366'">
-     Materiales
-  </a>
+<nav class="main-nav">
+  <a href="index">Inicio</a> |
+  <a href="sesiones">Sesiones</a> |
+  <a href="materiales">Materiales</a>
 </nav>
+
 
 
 # Materiales del taller
