@@ -2,7 +2,7 @@
 
 layout: default
 title: Sesiones del taller
-description: Materiales y notebooks para el taller Fundamentos de Data Science con Python / Diciembre 2025
+description: Revisa los contenidos, objetivos y enfoque de trabajo de cada una de las seis sesiones del taller Fundamentos de Data Science con Python.
 
 ---
 
