@@ -165,3 +165,11 @@ header a:hover {
   color: white !important;
   padding: 4px 8px;
 }
+
+/* Segunda línea más pequeña en la descripción del header */
+.tagline-small {
+  font-size: 16px !important;
+  font-weight: 400;
+  display: block;
+  margin-top: 6px;
+}
