@@ -100,3 +100,32 @@ nav a {
 .site-footer a:hover {
   color: #b84b12;
 }
+
+/* ===== Ultima Actualizacion ===== */
+/* Ocultar el enlace "Skip to the content." */
+.skip-to-content {/* Estilo para enlaces dentro del header (por ejemplo, "Ver en GitHub") */
+header a {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+header a:hover {
+  color: #FFEECC !important;
+}
+
+  display: none !important;
+}
+
+body > a:first-child {
+  display: none !important;
+}
+
+/* Estilo para enlaces dentro del header (por ejemplo, "Ver en GitHub") */
+header a {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+header a:hover {
+  color: #FFEECC !important;
+}
