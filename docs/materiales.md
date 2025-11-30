@@ -2,9 +2,25 @@
 title: Materiales del taller
 ---
 
-[Inicio](index.md) · [Sesiones](sesiones.md) · [Materiales](materiales.md)
+<nav style="text-align:center; font-size:18px; margin-bottom: 25px;">
+  <a href="index" style="color:#003366; font-weight:600;"
+     onmouseover="this.style.color='#FFCC00'"
+     onmouseout="this.style.color='#003366'">
+     Inicio
+  </a> |
+  <a href="sesiones" style="color:#003366; font-weight:600;"
+     onmouseover="this.style.color='#FFCC00'"
+     onmouseout="this.style.color='#003366'">
+     Sesiones
+  </a> |
+  <a href="materiales" style="color:#003366; font-weight:600;"
+     onmouseover="this.style.color='#FFCC00'"
+     onmouseout="this.style.color='#003366'">
+     Materiales
+  </a>
+</nav>
 
-# 📦 Materiales del taller
+# Materiales del taller
 
 En esta página se agrupan los principales recursos disponibles en el repositorio.
 
@@ -46,6 +62,7 @@ Datasets en formato CSV para trabajar en las practicas:
 - `02_Datasets/Ejemplo2.csv`
 
 Carpeta general: `02_Datasets/`
+
 ---
 
 ## Notebooks base
@@ -58,7 +75,16 @@ Notebooks sugeridos para trabajar durante las sesiones:
 - `03_Notebooks/04_Sesion_04.ipynb`  
 - `03_Notebooks/05_Sesion_05.ipynb`  
 
-Carpeta general: `03_Notebooks/`.
+
+
+- Sesión 1 — Introducción a Python  
+  [`01_Sesion_01.ipynb` en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/01_Sesion_01.ipynb)  
+  [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/01_Sesion_01.ipynb)
+- Sesión 2 — Análisis Exploratorio de Datos (EDA)  
+  [`02_Sesion_02.ipynb` en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/02_Sesion_02.ipynb)  
+  [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/02_Sesion_02.ipynb)
+
+Carpeta general: `03_Notebooks/`
 
 ---
 
@@ -73,6 +99,7 @@ Ejercicios adicionales para profundizar:
 - `04_Ejercicios_Practicos/05_Sesion5_Guion_Practica.ipynb`
 
 Carpeta general: `04_Ejercicios_Practicos/`
+
 ---
 
 ## Proyecto integrador
@@ -86,9 +113,10 @@ Incluye:
 - Rúbrica o criterios de evaluación.
 
 Carpeta general: `06_Actividad_Final/`
+
 ---
 
-## 🧾 Licencia
+## Licencia
 
 El código del repositorio se distribuye bajo licencia **MIT** y los materiales (documentos, presentaciones) bajo licencia **Creative Commons BY-SA 4.0**, según lo indicado en el archivo `LICENSE` del repositorio.
 
