@@ -1,17 +1,18 @@
-/* ===== Colores estilo UDLA ===== */
+/* ===== Colores UDLA ===== */
 :root {
-  --udla-orange: #F36F21;   /* Naranjo UDLA */
-  --udla-dark:   #333333;   /* Gris oscuro para texto */
-  --udla-light:  #F5F5F5;   /* Fondo suave */
+  --udla-orange: #F36F21;
+  --udla-dark:   #333333;
+  --udla-light:  #F5F5F5;
 }
 
-/* Fondo general del sitio */
+/* ===== Fondo general ===== */
 body {
   background-color: var(--udla-light);
   color: var(--udla-dark);
+  margin-top: 0 !important;  /* evita franja gris */
 }
 
-/* Contenedor principal del contenido */
+/* ===== Contenedor principal ===== */
 .main-content {
   background: #FFFFFF;
   padding: 35px;
@@ -20,13 +21,13 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.08);
 }
 
-/* Títulos */
+/* ===== Títulos ===== */
 h1, h2, h3, h4 {
   color: var(--udla-orange);
   font-weight: 700;
 }
 
-/* Enlaces */
+/* ===== Enlaces ===== */
 a {
   color: var(--udla-orange);
   text-decoration: none;
@@ -34,46 +35,52 @@ a {
 }
 
 a:hover {
-  color: #b84b12; /* naranjo más oscuro */
+  color: #b84b12;
   text-decoration: underline;
 }
 
-/* Encabezado superior (tema Cayman) */
-/* Header UDLA actual (mismo que ya tenías, pero centrado) */
+/* ===== CABECERA ORIGINAL (TEMA CAYMAN) ===== */
+
+/* Fondo naranja */
 header {
   background-color: var(--udla-orange) !important;
-  padding: 16px 10px !important;
+  padding: 18px 12px !important;
+  text-align: center !important;
 }
 
-/* Centrar los títulos dentro del header */
+/* Centrar texto del header */
 header h1,
 header h2 {
   text-align: center !important;
   margin-left: auto !important;
   margin-right: auto !important;
+  color: #ffffff !important;
 }
 
+/* ===== Omitir "Skip to the content." ===== */
+.skip-to-content {
+  display: none !important;
+}
 
-/* Línea divisoria */
+/* ===== Línea separadora ===== */
 hr {
   border-top: 2px solid var(--udla-orange);
 }
 
-/* Cajas de código */
+/* ===== Código ===== */
 pre, code {
   background-color: #EFEFEF;
   border-radius: 6px;
   padding: 4px 6px;
 }
 
-/* Navegación estilo menú */
+/* ===== Navegación ===== */
 nav a {
   margin: 0 10px;
   padding: 5px 10px;
 }
 
-
-/* ===== FOOTER ESTÁNDAR LIMPIO ===== */
+/* ===== Footer estándar limpio ===== */
 .site-footer {
   font-size: 13px;
   text-align: center;
@@ -93,26 +100,3 @@ nav a {
 .site-footer a:hover {
   color: #b84b12;
 }
-
-/* ===== MODIFICAR HEADER ORIGINAL (TEMA CAYMAN) ===== */
-
-/* Centrar texto de la cabecera original */
-.page-header {
-  text-align: center !important;
-}
-
-.page-header .project-name,
-.page-header .project-tagline {
-  text-align: center !important;
-}
-
-/* Ocultar enlace "Skip to the content." y la franja gris superior */
-.skip-to-content {
-  display: none !important;
-}
-
-body {
-  margin-top: 0 !important;
-}
-
-
