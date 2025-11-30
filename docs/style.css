@@ -115,4 +115,8 @@ body {
   margin-top: 0 !important;
 }
 
+/* PRUEBA: cambiar color de TODOS los h1 */
+h1 {
+  color: limegreen !important;  /* verde fosforescente solo para probar */
+}
 
