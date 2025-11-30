@@ -94,36 +94,23 @@ nav a {
 
 /* ===== MODIFICAR HEADER ORIGINAL (TEMA CAYMAN) ===== */
 
+/* Centrar texto de la cabecera original */
 .page-header {
-  background-color: var(--udla-orange) !important;
-  padding: 20px 10px !important;
   text-align: center !important;
 }
 
-.page-header .project-name {
-  color: #ffffff !important;
-  font-size: 32px !important;
-  font-weight: 700 !important;
-  margin: 0 !important;
-}
-
+.page-header .project-name,
 .page-header .project-tagline {
-  color: #ffffff !important;
-  font-size: 18px !important;
-  font-weight: 300 !important;
-  margin: 6px 0 10px 0 !important;
+  text-align: center !important;
 }
 
-.page-header .btn {
-  color: #ffffff !important;
-  border: 1px solid rgba(255,255,255,0.5) !important;
-  background: transparent !important;
-  margin-top: 10px !important;
+/* Ocultar enlace "Skip to the content." y la franja gris superior */
+.skip-to-content {
+  display: none !important;
 }
 
-.page-header .btn:hover {
-  background: rgba(255,255,255,0.2) !important;
+body {
+  margin-top: 0 !important;
 }
-
 
 
