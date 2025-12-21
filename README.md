@@ -15,7 +15,7 @@ Este repositorio contiene:
 
 Las clases grabadas del taller se encuentran disponibles en la siguiente lista de reproducción:
 
-👉 https://www.youtube.com/playlist?list=XXXXXXXX
+👉 [Ver Lista de Reproducción](https://www.youtube.com/playlist?list=PLrc3rKEj3Qc8MUhUOp6fYlg-f3W3lHX5z)
 
 Se recomienda seguir el orden de las sesiones y trabajar en paralelo con los notebooks disponibles en este repositorio.
 
