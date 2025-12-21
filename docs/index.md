@@ -35,6 +35,16 @@ Este sitio resume la estructura del curso, objetivos, materiales por sesión y e
 
 ---
 
+## 🎥 Lista de reproducción (YouTube)
+
+Las clases grabadas del taller se encuentran disponibles en la siguiente lista de reproducción:
+
+👉 https://www.youtube.com/playlist?list=XXXXXXXX
+
+Se recomienda seguir el orden de las sesiones y trabajar en paralelo con los notebooks disponibles en este repositorio.
+
+---
+
 ## Público objetivo
 
 - Docentes de educación superior, docentes escolares, profesionales o asistentes académicos.
