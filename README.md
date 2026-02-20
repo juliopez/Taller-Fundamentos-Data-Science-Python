@@ -1,3 +1,15 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18705759.svg)](https://doi.org/10.5281/zenodo.18705759)
+
+
+## Cómo citar este material
+
+López-Núñez, J. (2026). *Taller Fundamentos de Data Science con Python (Versión 1.0.0)*. Zenodo. https://doi.org/10.5281/zenodo.18705759
+
+## Licencia
+
+Este material se distribuye bajo licencia Creative Commons CC-BY 4.0, permitiendo su uso y adaptación con atribución.
+https://creativecommons.org/licenses/by/4.0/
+
 #  Taller Fundamentos de Data Science con Python
 
 Repositorio oficial del taller **“Fundamentos de Data Science con Python”**, orientado a académicas/os y profesionales que desean incorporar herramientas de análisis de datos y modelos de IA en su práctica educativa.
