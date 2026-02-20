@@ -1,11 +1,35 @@
 ---
+title: Taller Fundamentos de Data Science con Python
+---
 
-layout: default
-title: Inicio
-description: >
-  Bienvenido al sitio del taller Fundamentos de Data Science con Python.<br>
-  <span class="tagline-small">Aquí encontrarás materiales, notebooks, recursos y toda la información necesaria para participar en las sesiones.</span>
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18705759.svg)](https://doi.org/10.5281/zenodo.18705759)
 
+# Taller Fundamentos de Data Science con Python
+
+Repositorio oficial del taller **“Fundamentos de Data Science con Python”**, orientado a académicas/os, docentes y estudiantes que desean incorporar herramientas de análisis de datos y modelos de IA en su práctica educativa.
+
+---
+
+## Cómo citar este material
+
+López-Núñez, J. (2026). *Taller Fundamentos de Data Science con Python (Versión 1.0.0).* Zenodo. https://doi.org/10.5281/zenodo.18705759
+
+---
+
+## Licencia
+
+Este material se distribuye bajo licencia **Creative Commons CC BY 4.0**, permitiendo uso y adaptación con atribución:  
+https://creativecommons.org/licenses/by/4.0/
+
+---
+
+## 🎥 Lista de reproducción (YouTube)
+
+Las clases grabadas del taller se encuentran disponibles en la siguiente lista de reproducción:
+
+👉 [Ver Lista de Reproducción](https://www.youtube.com/playlist?list=PLrc3rKEj3Qc8MUhUOp6fYlg-f3W3lHX5z)
+
+Se recomienda seguir el orden de las sesiones y trabajar en paralelo con los notebooks disponibles en este repositorio.
 
 ---
 
@@ -27,22 +51,10 @@ description: >
 
 
 
-# Fundamentos de Data Science con Python
+## Navegación rápida
 
-Repositorio oficial de materiales para participantes del taller.
-
-Este sitio resume la estructura del curso, objetivos, materiales por sesión y enlaces rápidos a los notebooks.
-
----
-
-## 🎥 Lista de reproducción (YouTube)
-
-Las clases grabadas del taller se encuentran disponibles en la siguiente lista de reproducción:
-
-👉 [Ver Lista de Reproducción](https://www.youtube.com/playlist?list=PLrc3rKEj3Qc8MUhUOp6fYlg-f3W3lHX5z)
-
-Se recomienda seguir el orden de las sesiones y trabajar en paralelo con los notebooks disponibles en este repositorio.
-
+- 📘 **Sesiones**: [sesiones](sesiones.html)
+- 📦 **Materiales**: [materiales](materiales.html)
 ---
 
 ## Público objetivo
