@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "Taller Fundamentos de Data Science con Python"
+message: "If you use this educational resource, please cite it as follows."
+
+type: software
+
+authors:
+  - family-names: "López Núñez"
+    given-names: "Julio"
+    affiliation: "Universidad de Konstanz"
+    orcid: "https://orcid.org/0000-0002-7920-1563"
+
+version: 1.0.0
+date-released: 2026
+
+doi: 10.5281/zenodo.18705759
+
+repository-code: https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python
+
+license: CC-BY-4.0
