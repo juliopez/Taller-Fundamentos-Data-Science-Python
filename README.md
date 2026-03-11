@@ -69,6 +69,24 @@ Al finalizar el taller, las y los participantes serán capaces de:
 - No se requiere experiencia previa en programación avanzada, pero sí disposición a trabajar con ejemplos prácticos en Python.
 
 ---
+## Flujo del curso
+
+```mermaid
+flowchart TD
+
+A[Introducción a Data Science] --> B[Python para análisis de datos]
+
+B --> C[Manipulación de datos con Pandas]
+
+C --> D[Visualización de datos]
+
+D --> E[Introducción a Machine Learning]
+
+E --> F[Entrenamiento de modelos]
+
+F --> G[Evaluación de modelos]
+
+G --> H[Actividad final del taller]
 
 ## Estructura de carpetas del repositorio
 
