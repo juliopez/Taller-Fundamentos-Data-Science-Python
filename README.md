@@ -74,19 +74,20 @@ Al finalizar el taller, las y los participantes serán capaces de:
 ```mermaid
 flowchart TD
 
-A[Introducción a Data Science] --> B[Python para análisis de datos]
+A[Introduccion a Data Science] --> B[Python para analisis de datos]
 
-B --> C[Manipulación de datos con Pandas]
+B --> C[Manipulacion de datos con Pandas]
 
-C --> D[Visualización de datos]
+C --> D[Visualizacion de datos]
 
-D --> E[Introducción a Machine Learning]
+D --> E[Introduccion a Machine Learning]
 
 E --> F[Entrenamiento de modelos]
 
-F --> G[Evaluación de modelos]
+F --> G[Evaluacion de modelos]
 
 G --> H[Actividad final del taller]
+---
 
 ## Estructura de carpetas del repositorio
 
