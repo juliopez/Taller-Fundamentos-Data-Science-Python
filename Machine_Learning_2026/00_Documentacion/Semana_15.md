@@ -1,4 +1,4 @@
-# Semana 14 — Optimización de modelos: cuantificación y poda de redes
+# Semana 15 — Optimización de modelos: cuantificación y poda de redes
 
 ## 1. Propósito de la sesión
 
