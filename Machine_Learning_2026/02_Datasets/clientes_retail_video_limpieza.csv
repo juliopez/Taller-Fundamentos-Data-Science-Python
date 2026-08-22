@@ -1,0 +1,123 @@
+id_cliente,edad,genero,region,canal_preferido,categoria_frecuente,frecuencia_compra,monto_total,satisfaccion
+1001,56.0,F,Metropolitana,Online,Tecnología,7.0,350309.0,5
+1002,69.0,F,Metropolitana,Online,Vestuario,7.0,176278.0,1
+1003,46.0,F,Coquimbo, online ,Hogar,6.0,118391.0,5
+1004,32.0,M,Biobío,Online,Vestuario,8.0,91239.0,5
+1005,60.0,M,Biobío,Online,Vestuario,3.0,120712.0,2
+1006,,M,Metropolitana,Tienda,Tecnología,6.0,159776.0,1
+1007,38.0,M,Metropolitana,Tienda,Hogar,5.0,287571.0,2
+1008,56.0,M,Biobío,Online,Deportes,8.0,119408.0,3
+1009,15.0,M,Biobío,Online,Tecnología,3.0,228154.0,2
+1010,36.0,M,Coquimbo,Tienda,Hogar,4.0,216016.0,2
+1011,40.0,F,Coquimbo,Online,Hogar,2.0,225718.0,2
+1012,28.0,F,Biobío,Online,Hogar,4.0,,1
+1013,28.0,F,Coquimbo,Online,Hogar,5.0,436073.0,2
+1014,41.0,M,Coquimbo,Online, tecnología ,7.0,81242.0,1
+1015,70.0,M,Valparaíso,Tienda,Vestuario,5.0,279973.0,4
+1016,53.0,M,Coquimbo,Online,Tecnología,1.0,101480.0,3
+1017,57.0,F,Metropolitana,Tienda,Vestuario,7.0,130297.0,1
+1018,41.0,M,Coquimbo,onl,Deportes,3.0,53139.0,4
+1019,20.0,F,Coquimbo,Online,Hogar,4.0,149517.0,1
+1020,39.0,No informa,Biobío,Online,Tecnología,1.0,284430.0,1
+1021,70.0,M,Metropolitana,Online,Hogar,6.0,190024.0,3
+1022,19.0,M,Coquimbo,Tienda,Tecnología,12.0,203667.0,5
+1023,41.0,F,Coquimbo,Online,Vestuario,5.0,27733.0,5
+1024,61.0,F,Valparaíso,Online,Tecnología,-3.0,93276.0,1
+1025,,F,Coquimbo,Tienda,Deportes,3.0,78591.0,2
+1026,55.0,M,Coquimbo,Online,Deportes,7.0,211394.0,4
+1027,19.0,F,Valparaíso,Online,Tecnología,8.0,56282.0,2
+1028,38.0,F,Biobío,Online,Tecnología,2.0,556171.0,2
+1029,50.0,F,Coquimbo,Online,Tecnología,5.0,126192.0,1
+1030,29.0,M,Valparaíso,Tienda,Tecnología,4.0,55075.0,1
+1031,75.0,M,Metropolitana,Online,Deportes,1.0,87350.0,1
+1032,39.0,M,Biobío,web,Hogar,6.0,250883.0,1
+1033,61.0,M,Metropolitana,Online,Tecnología,4.0,125928.0,5
+1034,42.0,F,Metropolitana,Tienda,Tecnología,4.0,47536.0,1
+1035,66.0,M,Valparaíso,Online,Deportes,5.0,43708.0,5
+1036,44.0,M,Coquimbo,Online,Deportes,4.0,207155.0,5
+1037,59.0,F,Valparaíso,Tienda,Vestuario,7.0,187804.0,1
+1038,45.0,No informa,Valparaíso,Tienda,Tecnología,6.0,65453.0,3
+1039,33.0,M,Valparaíso,Tienda,Vestuario,3.0,,4
+1040,32.0,M,Valparaíso,Online,Deportes,4.0,136960.0,2
+1041,64.0,M,Biobío,Online,Deportes,3.0,68859.0,5
+1042,68.0,M,Coquimbo,Online,Hogar,4.0,359432.0,4
+1043,61.0,F,Metropolitana,Online,Tecnología,1.0,292024.0,3
+1044,72.0,F,Metropolitana,Online,Vestuario,10.0,224434.0,2
+1045,69.0,F,Coquimbo,Tienda,HOGAR,5.0,251252.0,2
+1046,74.0,F,Metropolitana,Online,Deportes,7.0,238276.0,5
+1047,20.0,F,Coquimbo,Tienda,Vestuario,3.0,112106.0,1
+1048,54.0,M,Metropolitana,Online,Hogar,0.0,145437.0,3
+1049,68.0,F,Valparaíso,Tienda,Deportes,4.0,287113.0,5
+1050,24.0,F,Metropolitana,tienda ,Tecnología,9.0,86605.0,3
+1051,38.0,F,Coquimbo,Online,Deportes,9.0,263158.0,1
+1052,26.0,M,Coquimbo,Tienda,Tecnología,9.0,149779.0,1
+1053,56.0,F,Coquimbo,Online,Vestuario,3.0,45520.0,5
+1054,35.0,M,Coquimbo,Online,Tecnología,5.0,59234.0,1
+1055,96.0,F,Coquimbo,Tienda,Vestuario,9.0,248371.0,4
+1056,42.0,F,Biobío,Tienda,Tecnología,5.0,200588.0,2
+1057,31.0,F,Biobío,Online,Vestuario,7.0,161956.0,5
+1058,67.0,F,Metropolitana,Online,Tecnología,8.0,242963.0,3
+1059,75.0,M,Coquimbo,Online,Hogar,4.0,179503.0,4
+1060,26.0,M,Metropolitana,Tienda,Tecnología,6.0,125016.0,5
+1061,43.0,M,Coquimbo,Online,Tecnología,4.0,196443.0,1
+1062,70.0,F,Coquimbo,Online,Hogar,4.0,306706.0,1
+1063,19.0,F,Biobío,Online,Deportes,4.0,464194.0,1
+1064,37.0,F,Biobío,Online,Deportes,5.0,285398.0,1
+1065,45.0,F,Valparaíso,Tienda,Tecnología,6.0,371509.0,3
+1066,64.0,M,Biobío,Online,Hogar,4.0,101225.0,4
+1067,24.0,F,Valparaíso,presencial,Tecnología,2.0,510735.0,2
+1068,,F,Valparaíso,Online,Vestuario,4.0,104034.0,3
+1069,25.0,F,Valparaíso,Online,Vestuario,7.0,202858.0,3
+1070,64.0,F,Valparaíso,Online,Tecnología,6.0,179874.0,2
+1071,52.0,M,Valparaíso,Online,Deportes,7.0,48944.0,2
+1072,31.0,M,Metropolitana,Tienda,Deportes,4.0,289432.0,1
+1073,34.0,F,Biobío,Tienda,Tecnología,10.0,124692.0,3
+1074,53.0,No informa,Valparaíso,Online,Tecnología,6.0,79940.0,5
+1075,67.0,F,Coquimbo,Tienda,Vestuario,9.0,192199.0,2
+1076,57.0,No informa,Biobío,Online,Deportes,4.0,,2
+1077,21.0,F,Biobío,Tienda,Tecnología,8.0,279164.0,4
+1078,19.0,F,Valparaíso,Online,Vestuario,8.0,116148.0,5
+1079,23.0,F,Metropolitana,Tienda,Deportes,7.0,143587.0,5
+1080,71.0,M,Valparaíso,Online,Hogar,4.0,352584.0,2
+1081,59.0,M,Metropolitana,Online,Vestuario,7.0,105178.0,1
+1082,21.0,M,Coquimbo,Online,Deportes,4.0,148292.0,4
+1083,71.0,F,Biobío,Online,Deportes,5.0,308148.0,5
+1084,46.0,M,Coquimbo,Online,Vestuario,7.0,187185.0,2
+1085,35.0,M,Metropolitana,Online,Hogar,2.0,71799.0,5
+1086,43.0,F,Metropolitana,Tienda,Vestuario,9.0,46534.0,4
+1087,61.0,F,Coquimbo,Online,Deportes,6.0,98996.0,4
+1088,51.0,F,Metropolitana,Online,Tecnología,6.0,209190.0,3
+1089,27.0,M,Coquimbo,Tienda,Tecnología,2.0,366834.0,2
+1090,53.0,M,Biobío,Tienda,Vestuario,0.0,301536.0,4
+1091,31.0,No informa,Coquimbo,Online,Deportes,1.0,83665.0,3
+1092,48.0,F,Biobío,Online,Tecnología,7.0,127676.0,3
+1093,65.0,M,Coquimbo,Tienda,Deportes,10.0,357874.0,5
+1094,32.0,M,Metropolitana,Online,Vestuario,5.0,34765.0,5
+1095,25.0,F,Coquimbo,Tienda,Tecnología,3.0,168086.0,3
+1096,31.0,M,Metropolitana,Tienda,Deportes,4.0,82996.0,5
+1097,40.0,M,Coquimbo,Online,Tecnología,8.0,377222.0,4
+1098,74.0,M,Coquimbo,Online,Vestuario,8.0,345119.0,1
+1099,,F,Valparaíso,Tienda,Deportes,4.0,186473.0,4
+1100,38.0,F,Metropolitana,Online,Tecnología,3.0,114077.0,3
+1101,33.0,M,Valparaíso,Online,Vestuario,1.0,422125.0,3
+1102,62.0,M,Metropolitana,Tienda,Tecnología,1.0,91591.0,4
+1103,35.0,F,Valparaíso,Tienda,Tecnología,4.0,204886.0,5
+1104,64.0,F,Biobío,Tienda,Hogar,3.0,152141.0,5
+1105,70.0,No informa,Coquimbo,Tienda,Hogar,7.0,322491.0,3
+1106,41.0,F,Metropolitana,Tienda,Vestuario,2.0,36302.0,2
+1107,43.0,M,Metropolitana,Tienda,Hogar,10.0,219913.0,5
+1108,42.0,M,Coquimbo,Tienda,Vestuario,5.0,255562.0,4
+1109,62.0,M,Metropolitana,Tienda,Hogar,5.0,353250.0,5
+1110,58.0,M,Metropolitana,Tienda,Tecnología,5.0,112248.0,4
+1111,46.0,F,Valparaíso,Online,Vestuario,6.0,101939.0,3
+1112,32.0,M,Metropolitana,Tienda,Vestuario,6.0,89179.0,5
+1113,62.0,M,Biobío,Tienda,Tecnología,5.0,95469.0,4
+1114,18.0,F,Biobío,Tienda,Vestuario,1.0,377036.0,3
+1115,42.0,F,Coquimbo,Tienda,Vestuario,4.0,228346.0,2
+1116,24.0,No informa,Metropolitana,Tienda,Hogar,8.0,38721.0,4
+1117,26.0,M,Coquimbo,Online,Vestuario,6.0,194700.0,2
+1118,41.0,F,Biobío,Online,Deportes,4.0,61505.0,2
+1119,18.0,No informa,Metropolitana,Online,Tecnología,5.0,149801.0,1
+1120,61.0,No informa,Metropolitana,Online,Hogar,3.0,147032.0,5
+1008,56.0,M,Biobío,Online,Deportes,8.0,119408.0,3
+1037,59.0,F,Valparaíso,Tienda,Vestuario,7.0,187804.0,1
