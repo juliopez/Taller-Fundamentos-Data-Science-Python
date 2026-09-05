@@ -4,15 +4,13 @@ Este directorio contiene los conjuntos de datos utilizados en las actividades pr
 
 ## Organización
 
-Cada dataset incorporado al directorio debe estar acompañado por su correspondiente **diccionario de datos**, en un archivo independiente.
-
-La estructura recomendada es:
+Cada dataset incorporado al directorio esta acompañado por su correspondiente **diccionario de datos**, en un archivo independiente.
 
 ```text
 dataset/
 ├── README.md
 ├── nombre_dataset.csv
-├── nombre_dataset_diccionario.md
+├── diccionario_datos_nombre_dataset.md
 └── ...
 ```
 
