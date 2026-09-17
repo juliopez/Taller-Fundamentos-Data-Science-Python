@@ -18,14 +18,50 @@
 <section class='card'><h2>5. Anatomía de una línea <code>Dense</code></h2><pre>Dense(128, activation='relu', input_shape=(784,))</pre><div class='diagram'><div class='node'><strong>Dense</strong><br><span class='note'>tipo de capa</span></div><span class='arrow'>→</span><div class='node'><strong>128</strong><br><span class='note'>unidades</span></div><span class='arrow'>→</span><div class='node'><strong>ReLU</strong><br><span class='note'>activación</span></div><span class='arrow'>→</span><div class='node'><strong>(784,)</strong><br><span class='note'>forma de entrada</span></div></div><p><strong>Lectura:</strong> crea una capa totalmente conectada de 128 unidades, usa ReLU y espera vectores de 784 valores.</p></section>
 <section class='card'><h2>6. Parámetros aprendidos vs. decisiones configuradas</h2><div class='grid'><div class='info'><div class='big'>Parámetros aprendidos</div><p><span class='pill'>weights</span><span class='pill'>biases</span></p><p>Cambian durante el entrenamiento.</p></div><div class='info'><div class='big'>Decisiones configuradas</div><p><span class='pill'>128 unidades</span><span class='pill'>ReLU</span><span class='pill'>Adam</span><span class='pill'>loss</span></p><p>Son decisiones de diseño/configuración; varias son hiperparámetros y otras dependen de los datos o del problema.</p></div></div><div class='diagram'><div class='node'>Predicción</div><span class='arrow'>→</span><div class='node'>Loss<br><span class='note'>mide error</span></div><span class='arrow'>→</span><div class='node'>Optimizador</div><span class='arrow'>→</span><div class='node'>Pesos y sesgos<br><span class='note'>se actualizan</span></div></div></section>
 <section class='card'><h2>7. Diseño de la arquitectura: capas y neuronas</h2>
-<p>El número de capas ocultas y de unidades son <strong>hiperparámetros</strong>. El modelo no los aprende: quien diseña la red propone una configuración y luego la contrasta con entrenamiento y validación.</p>
+<p>El número de capas ocultas y de neuronas son <strong>hiperparámetros</strong>. El modelo no los aprende: quien diseña la red propone una configuración y luego la contrasta con entrenamiento y validación.</p>
+
+<div class='info' style='margin:14px 0'>
+<div class='big'>¿Cuántas capas y neuronas necesita una red?</div>
+<p>Conviene distinguir entre lo que está <strong>determinado por los datos o por el problema</strong> y aquello que debe decidirse mediante diseño y experimentación.</p>
+<div style='overflow:auto'>
+<table>
+<thead><tr><th>Parte de la red</th><th>¿Cómo se determina?</th><th>Ejemplo</th></tr></thead>
+<tbody>
+<tr><td><strong>Entrada</strong></td><td>Depende del número de características que recibe el modelo <strong>después de preparar los datos</strong>.</td><td>5 características numéricas → 5 valores de entrada.</td></tr>
+<tr><td><strong>Capas ocultas</strong></td><td>Es una decisión de diseño: un <strong>hiperparámetro</strong>. Conviene comenzar con una arquitectura simple y aumentar la complejidad si la evidencia lo justifica.</td><td>Comenzar con 1 capa oculta.</td></tr>
+<tr><td><strong>Neuronas ocultas</strong></td><td>También son un <strong>hiperparámetro</strong>. No existe una cantidad universalmente correcta.</td><td>Probar 16, 32, 64, 128…</td></tr>
+<tr><td><strong>Salida</strong></td><td>Depende del tipo de problema. En clasificación multiclase excluyente suele corresponder al número de clases.</td><td>4 clases → 4 neuronas + Softmax.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class='diagram'>
+<div class='node'><strong>ENTRADA</strong><br><span class='note'>la determinan los datos</span><br><br>5 características</div>
+<span class='arrow'>→</span>
+<div class='node'><strong>CAPA OCULTA</strong><br><span class='note'>la diseñas y experimentas</span><br><br>Dense(32, ReLU)</div>
+<span class='arrow'>→</span>
+<div class='node'><strong>SALIDA</strong><br><span class='note'>la determina el problema</span><br><br>4 clases</div>
+</div>
+
+<div class='decision' style='margin-bottom:16px'>
+<strong>¿Por dónde comienzo?</strong>
+<p>Como estrategia inicial, comienza con una red sencilla: por ejemplo, <strong>1 capa oculta con 32 neuronas</strong>. Entrena el modelo y observa entrenamiento y validación. Después prueba otra configuración —por ejemplo 64 neuronas o una segunda capa— y compara los resultados.</p>
+<p class='note'><strong>No existe una fórmula universal</strong> para determinar el número óptimo de capas ocultas o neuronas. Son hiperparámetros que se seleccionan mediante experimentación y evaluación.</p>
+</div>
+
+<div class='warn' style='margin-bottom:16px'>
+<strong>Atención con la capa de entrada:</strong> “5 variables” no siempre significa “5 entradas”. Si una variable categórica se transforma mediante <em>one-hot encoding</em>, puede generar varias columnas. Por eso en Keras resulta útil utilizar <code>Input(shape=(n_features,))</code>, donde <code>n_features</code> corresponde al número final de características que realmente recibe el modelo.
+</div>
+
 <div class='grid'><div>
 <div class='control'><label><span>Capas ocultas</span><span class='valueBox' id='layersVal'>1</span></label><input id='layersRange' type='range' min='1' max='4' value='1'></div>
-<div class='control'><label><span>Unidades primera capa</span><span class='valueBox' id='units1Val'>64</span></label><input id='units1Range' type='range' min='8' max='256' step='8' value='64'></div>
-<div class='control'><label><span>Unidades capas adicionales</span><span class='valueBox' id='units2Val'>32</span></label><input id='units2Range' type='range' min='8' max='128' step='8' value='32'></div>
+<div class='control'><label><span>Neuronas en la primera capa oculta</span><span class='valueBox' id='units1Val'>64</span></label><input id='units1Range' type='range' min='8' max='256' step='8' value='64'></div>
+<div class='control'><label><span>Neuronas en capas ocultas adicionales</span><span class='valueBox' id='units2Val'>32</span></label><input id='units2Range' type='range' min='8' max='128' step='8' value='32'></div>
 <div class='choices' id='hiddenActBtns'></div></div>
 <div><div class='label'>Arquitectura generada</div><pre id='architectureCode'></pre><div class='info'><strong>Interpretación</strong><p id='architectureAdvice'></p></div></div></div>
-<div class='warn' style='margin-top:14px'><strong>Importante:</strong> más capas o neuronas no significan automáticamente un mejor modelo. La decisión debe contrastarse con evidencia.</div>
+
+<div class='warn' style='margin-top:14px'><strong>Importante:</strong> más capas o neuronas no significan automáticamente un mejor modelo. La decisión debe contrastarse con evidencia de entrenamiento y validación.</div>
 </section>
 
 <section class='card'><h2>8. Hiperparámetros del entrenamiento</h2>
