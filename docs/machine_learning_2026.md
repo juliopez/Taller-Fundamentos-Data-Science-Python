@@ -47,7 +47,7 @@ Material complementario utilizado durante la asignatura.
 
 Simuladores para la comprensión de diversos conceptos.
 
-[Ver recursos](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/tree/main/Machine_Learning_2026/06_Simuladores/Simulador_Redes_Neuronales.html)
+[Configuración Inicial Red Neuronal](https://juliopez.github.io/Taller-Fundamentos-Data-Science-Python/Simulador_Redes_Neuronales.html)
 
 ---
 
