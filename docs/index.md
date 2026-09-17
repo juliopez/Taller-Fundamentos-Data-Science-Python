@@ -11,7 +11,7 @@ Science y Machine Learning.
 
 ------------------------------------------------------------------------
 
-## Taller Fundamentos de Data Science con Python --- 2025
+## Taller Fundamentos de Data Science con Python
 
 Material correspondiente al taller orientado a académicas/os, docentes y
 estudiantes que desean incorporar herramientas de análisis de datos y
@@ -21,7 +21,7 @@ modelos de IA en su práctica educativa.
 
 ------------------------------------------------------------------------
 
-## Machine Learning --- 2026
+## Machine Learning
 
 Material correspondiente a la asignatura **Machine Learning 2026**,
 organizado en presentaciones, notebooks, datasets y recursos asociados
