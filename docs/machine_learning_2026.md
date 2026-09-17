@@ -43,6 +43,12 @@ Material complementario utilizado durante la asignatura.
 
 [Ver recursos](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/tree/main/Machine_Learning_2026/05_Recursos)
 
+## Simuladores
+
+Simuladores para la comprensión de diversos conceptos.
+
+[Ver recursos](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/tree/main/Machine_Learning_2026/06_Simuladores/Simulador_Redes_Neuronales.html)
+
 ---
 
 ## Proyecto Integrador
