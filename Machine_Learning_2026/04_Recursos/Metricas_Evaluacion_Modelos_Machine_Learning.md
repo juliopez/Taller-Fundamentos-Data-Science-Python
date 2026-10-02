@@ -104,13 +104,14 @@ La red sigue mejorando sobre los datos que ya conoce, pero empeora o deja de mej
 
 ### Underfitting — subajuste
 
-El modelo todavía no logra aprender suficientemente los patrones presentes en los datos.
+El modelo no logra aprender suficientemente los patrones presentes en los datos, por lo que presenta un desempeño bajo tanto en entrenamiento como en validación.
 
 Un patrón frecuente se observa en las siguientes curvas:
 
 ![Ejemplo de underfitting en las curvas de Accuracy y Loss](underfitting.png)
 
-En este caso puede ser necesario revisar la arquitectura, los hiperparámetros, las características utilizadas o el propio conjunto de datos.
+En este caso, el accuracy de entrenamiento y validación permanece relativamente bajo, mientras que el loss se mantiene relativamente alto. Esto indica que el modelo todavía no consigue ajustarse adecuadamente ni siquiera a los datos de entrenamiento.
+Para mejorar el modelo puede ser necesario revisar su arquitectura e hiperparámetros, las características utilizadas o el propio conjunto de datos.
 
 ---
 
