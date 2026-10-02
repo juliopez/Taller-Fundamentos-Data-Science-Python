@@ -96,13 +96,9 @@ Durante el entrenamiento de una red neuronal normalmente observamos dos conjunto
 
 El modelo aprende demasiado específicamente los datos de entrenamiento y pierde capacidad para generalizar a datos nuevos.
 
-Un patrón frecuente es:
+Un patrón frecuente se observa en las siguientes curvas:
 
-```text
-TRAIN                         VALIDACIÓN
-Accuracy aumenta              Accuracy se estanca o disminuye
-Loss disminuye                Loss aumenta
-```
+![Ejemplo de overfitting en las curvas de Accuracy y Loss](overfitting.png)
 
 La red sigue mejorando sobre los datos que ya conoce, pero empeora o deja de mejorar frente a datos de validación.
 
@@ -110,13 +106,9 @@ La red sigue mejorando sobre los datos que ya conoce, pero empeora o deja de mej
 
 El modelo todavía no logra aprender suficientemente los patrones presentes en los datos.
 
-Un patrón frecuente es:
+Un patrón frecuente se observa en las siguientes curvas:
 
-```text
-TRAIN                         VALIDACIÓN
-Accuracy baja                 Accuracy baja
-Loss relativamente alto       Loss relativamente alto
-```
+![Ejemplo de underfitting en las curvas de Accuracy y Loss](underfitting.png)
 
 En este caso puede ser necesario revisar la arquitectura, los hiperparámetros, las características utilizadas o el propio conjunto de datos.
 
