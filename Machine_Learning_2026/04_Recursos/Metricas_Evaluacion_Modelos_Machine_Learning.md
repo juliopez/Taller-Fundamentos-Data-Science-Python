@@ -102,6 +102,8 @@ Un patrón frecuente se observa en las siguientes curvas:
 
 La red sigue mejorando sobre los datos que ya conoce, pero empeora o deja de mejorar frente a datos de validación.
 
+---
+
 ### Underfitting — subajuste
 
 El modelo no logra aprender suficientemente los patrones presentes en los datos, por lo que presenta un desempeño bajo tanto en entrenamiento como en validación.
@@ -179,18 +181,6 @@ Un valor debe interpretarse considerando, entre otros elementos:
 5. La calidad y cantidad de datos.
 6. El objetivo para el cual se utilizará el modelo.
 7. La diferencia entre entrenamiento, validación y prueba.
-
-### Criterio específico de la Evaluación 2
-
-En la **Evaluación 2 del curso**, se utiliza:
-
-> **Accuracy en test ≥ 60 %**
-
-como un **umbral pedagógico específico para el ejercicio y el dataset utilizado**.
-
-Este valor **no constituye una regla general de Machine Learning**.
-
-Además, el modelo debe compararse con el **baseline** y deben interpretarse las curvas de **Accuracy y Loss**. Alcanzar el 60 % por sí solo no demuestra que el entrenamiento sea óptimo ni que no exista overfitting.
 
 ---
 
