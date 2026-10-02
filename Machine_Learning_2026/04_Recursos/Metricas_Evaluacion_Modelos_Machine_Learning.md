@@ -94,7 +94,7 @@ Durante el entrenamiento de una red neuronal normalmente observamos dos conjunto
 
 ### Overfitting — sobreajuste
 
-El modelo aprende demasiado específicamente los datos de entrenamiento y pierde capacidad para generalizar a datos nuevos.
+El modelo se ajusta demasiado a los datos de entrenamiento y pierde capacidad para generalizar a datos nuevos.
 
 Un patrón frecuente se observa en las siguientes curvas:
 
