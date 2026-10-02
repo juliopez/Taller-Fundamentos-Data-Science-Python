@@ -111,6 +111,7 @@ Un patrón frecuente se observa en las siguientes curvas:
 ![Ejemplo de underfitting en las curvas de Accuracy y Loss](underfitting.png)
 
 En este caso, el accuracy de entrenamiento y validación permanece relativamente bajo, mientras que el loss se mantiene relativamente alto. Esto indica que el modelo todavía no consigue ajustarse adecuadamente ni siquiera a los datos de entrenamiento.
+
 Para mejorar el modelo puede ser necesario revisar su arquitectura e hiperparámetros, las características utilizadas o el propio conjunto de datos.
 
 ---
@@ -143,7 +144,7 @@ El modelo presenta evidencia de **overfitting**. Está aprendiendo cada vez mejo
 
 Por lo tanto, una conclusión adecuada sería:
 
-> El modelo presenta un desempeño superior al baseline y alcanza un Accuracy aceptable para el ejercicio. Sin embargo, las curvas muestran una separación progresiva entre entrenamiento y validación. El Loss de entrenamiento disminuye mientras el Loss de validación aumenta, lo que constituye evidencia de sobreajuste. Un siguiente experimento debería modificar hiperparámetros con el objetivo de mejorar la capacidad de generalización.
+> El modelo presenta un desempeño superior al baseline y alcanza el umbral de Accuracy establecido para el ejercicio. Sin embargo, las curvas muestran una separación progresiva entre entrenamiento y validación. El Loss de entrenamiento disminuye mientras el Loss de validación aumenta, lo que constituye evidencia de sobreajuste. Un siguiente experimento debería modificar hiperparámetros con el objetivo de mejorar la capacidad de generalización.
 
 ---
 
