@@ -3,39 +3,60 @@ layout: default
 title: Inicio
 ---
 
-# Recursos abiertos de Data Science y Machine Learning
+<link rel="stylesheet" href="assets/css/portal.css">
 
-**Materiales docentes para aprender, practicar y desarrollar proyectos con Python, análisis de datos y redes neuronales.**
+<div class="portal-hero">
+  <p class="portal-eyebrow">RECURSOS EDUCATIVOS ABIERTOS</p>
+  <h1>Aprende Data Science y Machine Learning</h1>
+  <p>Explora materiales prácticos de Python, análisis de datos, aprendizaje automático y redes neuronales. Un espacio abierto para estudiantes, docentes y profesionales.</p>
+  <a class="portal-action" href="catalogo.html">Explorar todos los recursos &rarr;</a>
+</div>
 
-Este portal ofrece acceso a los recursos del repositorio, organizados por **trayectoria formativa** y **tipo de material**. Los enlaces a notebooks permiten trabajar en Google Colab; los simuladores funcionan en el navegador.
+## Explora las áreas de aprendizaje
 
----
+<div class="portal-grid">
+  <section class="portal-card">
+    <div class="portal-card-icon">01 / DATOS</div>
+    <h3>Fundamentos de Data Science con Python</h3>
+    <p>Programación, exploración y visualización de datos, introducción a modelos predictivos y actividades prácticas.</p>
+    <p class="portal-meta">Presentaciones · Notebooks · Datasets · Ejercicios</p>
+    <a href="taller_2025.html">Explorar recursos &rarr;</a>
+  </section>
+  <section class="portal-card">
+    <div class="portal-card-icon">02 / MODELOS</div>
+    <h3>Machine Learning y Deep Learning</h3>
+    <p>Clasificación, redes neuronales, procesamiento de imágenes, modelos convolucionales y despliegue de aplicaciones.</p>
+    <p class="portal-meta">Presentaciones · Notebooks · Datasets · Actividades</p>
+    <a href="machine_learning_2026.html">Explorar recursos &rarr;</a>
+  </section>
+</div>
 
-## Elige una trayectoria
+## Recursos para aprender haciendo
 
-### [Machine Learning y Deep Learning →](machine_learning_2026.html)
+<div class="portal-grid portal-grid-three">
+  <section class="portal-mini-card">
+    <h3>Notebooks</h3>
+    <p>Ejercicios ejecutables en Google Colab, desde los fundamentos hasta aplicaciones.</p>
+    <a href="catalogo.html#notebooks">Ver notebooks &rarr;</a>
+  </section>
+  <section class="portal-mini-card">
+    <h3>Datasets</h3>
+    <p>Conjuntos de datos y diccionarios para practicar análisis y entrenamiento de modelos.</p>
+    <a href="catalogo.html#datasets">Ver datasets &rarr;</a>
+  </section>
+  <section class="portal-mini-card">
+    <h3>Simuladores</h3>
+    <p>Herramientas interactivas para comprender redes neuronales y experimentar con CNN.</p>
+    <a href="machine_learning_2026.html#simuladores-interactivos">Ver simuladores &rarr;</a>
+  </section>
+</div>
 
-Clasificación, redes neuronales, procesamiento de imágenes, CNN, transferencia de aprendizaje y despliegue de modelos. Incluye **notebooks, presentaciones, datasets, guías, tareas y simuladores**.
+<div class="portal-bottom">
+  <div>
+    <h2>Catálogo completo</h2>
+    <p>¿Buscas un archivo específico? Consulta el índice organizado por áreas y tipos de recursos, con enlaces a los materiales disponibles en GitHub.</p>
+  </div>
+  <a class="portal-action" href="catalogo.html">Abrir catálogo &rarr;</a>
+</div>
 
-### [Fundamentos de Data Science con Python →](taller_2025.html)
-
-Introducción a Python, análisis exploratorio de datos, Machine Learning y actividades integradoras, con presentaciones, notebooks, ejercicios y datasets.
-
----
-
-## Simuladores interactivos
-
-- [**Redes neuronales**](Simulador_Redes_Neuronales.html) — explora capas densas, activaciones e hiperparámetros.
-- [**Introducción a CNN**](Simulador_CNN.html) — comprende convoluciones, filtros, pooling y dimensiones.
-- [**Laboratorio de optimización CNN**](Simulador_Laboratorio_Optimizacion_CNN.html) — formula hipótesis y compara configuraciones con evidencia.
-
----
-
-## Acceso directo a todos los materiales
-
-- [**Catálogo completo de recursos →**](catalogo.html) — índice de archivos navegable por categoría.
-- [**Notebooks y actividades de Machine Learning →**](machine_learning_2026.html#notebooks-en-google-colab)
-- [**Materiales del taller de Data Science →**](taller_2025.html)
-- [**Repositorio completo en GitHub →**](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python)
-
-> **Nota:** los años que aparecen en nombres internos de carpetas o archivos se mantienen para conservar la compatibilidad de los enlaces existentes. La navegación pública está organizada por contenidos y no por año.
+<p class="portal-footnote">Los materiales están disponibles en el <a href="https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python">repositorio público de GitHub</a>. Los notebooks se ejecutan en Google Colab y los simuladores se abren directamente en el navegador.</p>
