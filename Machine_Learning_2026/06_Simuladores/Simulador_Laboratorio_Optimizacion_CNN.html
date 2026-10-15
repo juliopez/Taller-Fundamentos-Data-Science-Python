@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Laboratorio CNN — Diagnosticar, experimentar y fundamentar</title>
+<style>
+:root{--bg:#f3f7fb;--ink:#183348;--muted:#586f81;--card:#fff;--line:#d5e1eb;--accent:#126c9b;--soft:#eaf4fb;--ok:#146c50;--warn:#9b6112}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+header{background:linear-gradient(130deg,#103b60,#176f99);color:#fff;padding:32px max(18px,calc((100vw - 1150px)/2))}
+header p{max-width:850px;color:#e3f1fa}h1{font-size:clamp(27px,4vw,42px);margin:0}h2{margin:0 0 14px;font-size:23px}h3{margin:15px 0 8px}
+main{max-width:1150px;margin:auto;padding:18px 18px 60px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin:18px 0;box-shadow:0 3px 15px #12344a0a}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.metric{background:var(--soft);border-radius:12px;padding:14px;text-align:center}.metric strong{font-size:27px;display:block}
+.muted,small{color:var(--muted)}label{display:block;font-weight:650;margin:13px 0 5px}input,select,textarea{font:inherit;color:var(--ink)}input[type=range]{width:100%}input[type=number],select,textarea{width:100%;padding:9px;border:1px solid #aebfcf;border-radius:8px;background:white}
+textarea{min-height:85px}button{cursor:pointer;border:1px solid var(--accent);border-radius:9px;padding:10px 15px;background:var(--accent);color:#fff;font-weight:650;margin:6px 6px 6px 0}button.secondary{background:#fff;color:var(--accent)}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #f5b950;outline-offset:2px}
+.notice{background:var(--soft);border-left:4px solid var(--accent);padding:13px;border-radius:6px;margin:12px 0}.warning{border-left-color:var(--warn);background:#fff6e9}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:9px;border-bottom:1px solid var(--line);text-align:left}th{background:#edf4f9}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#122438;color:#e5f3ff;padding:15px;border-radius:10px;font-size:13px}
+svg{width:100%;height:auto;max-height:320px} .pill{display:inline-block;background:#dceef8;color:#174e72;padding:5px 11px;border-radius:20px;margin:3px}
+details{padding:12px;border:1px solid var(--line);border-radius:9px;margin:8px 0}summary{cursor:pointer;font-weight:700}
+@media(max-width:640px){.metrics{grid-template-columns:1fr} .card{padding:15px}}
+</style></head>
+<body><header><h1>Laboratorio de optimización y generalización de CNN</h1>
+<p>Simulador interactivo para la sección 13 del NB04 · Piedra, papel o tijeras · <b>Diagnosticar → Experimentar → Fundamentar</b></p>
+<p>Los cambios de arquitectura y los parámetros se calculan. Los resultados predictivos <b>no se inventan</b>: se obtienen entrenando realmente en Google Colab.</p></header>
+<main>
+<section class="card"><h2>1. Diagnosticar: ¿qué nos dicen los resultados?</h2>
+<div class="metrics"><div class="metric">Entrenamiento<strong>≈ 99 %</strong></div><div class="metric">Validación<strong>≈ 98 %</strong></div><div class="metric">Prueba<strong>76 %</strong></div></div>
+<p class="muted">Valores observados en una ejecución del NB04, no resultados garantizados de cualquier entrenamiento.</p>
+<label for="diagnosis">¿Qué interpretación investigarías primero?</label><select id="diagnosis">
+<option value="general">Entrenamiento y validación altos, pero prueba menor</option><option value="overfit">Entrenamiento alto, validación baja</option><option value="underfit">Entrenamiento y validación bajos</option><option value="unknown">Necesito más evidencia</option></select>
+<div id="diagnosisFeedback" class="notice" aria-live="polite"></div>
+<details><summary>¿Qué conviene revisar antes de cambiar capas?</summary><p>Inspecciona ejemplos de entrenamiento y prueba, preprocesamiento, errores por clase y matriz de confusión. Una brecha entre validación y prueba puede indicar diferencias entre distribuciones u otras causas; no demuestra por sí sola una causa específica.</p></details>
+</section>
+<section class="card"><h2>2. Experimentar: modifica una variable</h2>
+<p>La configuración inicial reproduce la arquitectura del NB04: imágenes 128×128×3, dos convoluciones 3×3 válidas, dos max pooling 2×2, Flatten, Dense y Softmax de tres clases.</p>
+<div class="grid"><div>
+<label for="epochs">Épocas: <output id="epochsVal">5</output></label><input type="range" id="epochs" min="5" max="20" step="5" value="5">
+<label for="filters">Filtros Conv2D</label><select id="filters"><option value="16,32">16 / 32 (original)</option><option value="32,64">32 / 64</option><option value="64,128">64 / 128</option></select>
+<label for="dense">Neuronas Dense: <output id="denseVal">32</output></label><input type="range" id="dense" min="32" max="128" step="32" value="32">
+</div><div>
+<label for="batch">Batch size</label><select id="batch"><option>8</option><option selected>16</option><option>32</option><option>64</option></select>
+<label for="lr">Learning rate</label><select id="lr"><option>0.0001</option><option selected>0.001</option><option>0.01</option></select>
+<div class="notice"><strong>Regla de la actividad:</strong> cambia una variable a la vez y entrena un modelo nuevo desde cero. No reutilices pesos ya entrenados para comparar configuraciones.</div>
+<button id="reset" class="secondary">Restablecer configuración</button>
+</div></div>
+<div id="changeFeedback" class="notice" aria-live="polite"></div>
+<div class="grid"><div class="metric"><span>Parámetros entrenables</span><strong id="params">—</strong><small id="ratio"></small></div><div class="metric"><span>Dimensión tras segunda convolución + pooling</span><strong id="shape">30 × 30</strong><small id="flat">—</small></div><div class="metric"><span>Actualización por época (aprox.)</span><strong id="steps">—</strong><small>360 imágenes de entrenamiento</small></div></div>
+<h3>Arquitectura comparativa</h3><div id="architecture" aria-live="polite"></div>
+<h3>¿Qué cambia y qué no podemos garantizar?</h3><div id="interpretation" class="notice"></div>
+</section>
+<section class="card"><h2>3. Fundamentar: contrasta con evidencia real</h2>
+<p>Primero formula una hipótesis y después ejecuta el cambio en Colab. Registra aquí los valores <b>de validación</b>. No ajustes reiteradamente usando el conjunto de prueba.</p>
+<label for="hypothesis">Mi hipótesis (antes del experimento)</label><textarea id="hypothesis" placeholder="Si modifico ..., espero ..., porque ..."></textarea>
+<div class="grid"><div><h3>CNN original</h3><label for="baseAcc">Accuracy de validación (%)</label><input type="number" id="baseAcc" min="0" max="100" step="0.01" placeholder="Ingresa el valor real"><label for="baseLoss">Loss de validación</label><input type="number" id="baseLoss" min="0" step="0.0001" placeholder="Ingresa el valor real"><label for="baseTime">Tiempo de entrenamiento (s)</label><input type="number" id="baseTime" min="0" step="0.1" placeholder="Opcional"></div>
+<div><h3>CNN experimental</h3><label for="newAcc">Accuracy de validación (%)</label><input type="number" id="newAcc" min="0" max="100" step="0.01" placeholder="Ingresa el valor real"><label for="newLoss">Loss de validación</label><input type="number" id="newLoss" min="0" step="0.0001" placeholder="Ingresa el valor real"><label for="newTime">Tiempo de entrenamiento (s)</label><input type="number" id="newTime" min="0" step="0.1" placeholder="Opcional"></div></div>
+<button id="compare">Comparar resultados ingresados</button><div id="comparison" class="notice" aria-live="polite">Completa las métricas obtenidas en Colab para compararlas. El simulador no estima accuracy.</div>
+<label for="conclusion">Conclusión fundamentada</label><textarea id="conclusion" placeholder="Conservaría ... porque los resultados de validación muestran ..."></textarea>
+<button id="copyReport">Copiar informe experimental</button>
+</section>
+<section class="card"><h2>4. Código Keras para probar la hipótesis</h2>
+<p>El código crea y compila una CNN nueva. <b>Usa los mismos datos y particiones del NB04</b>; no es un notebook completo ni reemplaza la preparación del dataset.</p>
+<pre id="code"></pre><button id="copyCode">Copiar código Keras</button>
+<div class="notice warning">Para cambiar el batch size, debes reconstruir los datasets de entrenamiento y validación con ese tamaño de lote. Cambiar únicamente el valor del control no altera los datasets que ya están en memoria en Colab. Mantén la semilla y las mismas particiones. Compara configuraciones mediante validación; reserva la prueba para la evaluación final del modelo elegido.</div>
+</section>
+<section class="card"><h2>5. Desafíos de reflexión</h2>
+<details><summary>¿Por qué 10 épocas no garantizan una mejor predicción?</summary><p>Más épocas ofrecen más oportunidades de ajustar los pesos, pero también pueden aumentar el sobreajuste. Compara las curvas de pérdida y accuracy de entrenamiento y validación.</p></details>
+<details><summary>¿Por qué más filtros o neuronas no siempre mejoran la generalización?</summary><p>Incrementan la capacidad y el número de parámetros, pero pueden aumentar el costo computacional y la tendencia a memorizar particularidades del entrenamiento.</p></details>
+<details><summary>¿Qué harías si validación sigue alta y prueba baja?</summary><p>Investiga primero la diferencia entre conjuntos, los errores por clase, el preprocesamiento y la representatividad de las imágenes. Un cambio arquitectónico por sí solo puede no resolver el problema.</p></details>
+<details><summary>¿Qué variable cambia el número de parámetros de la red?</summary><p>Los filtros y las neuronas densas modifican los parámetros entrenables. Épocas, batch size y learning rate afectan el entrenamiento, pero no el número de parámetros de esta arquitectura.</p></details>
+<p class="muted">Recurso de apoyo a la experimentación del NB04. HTML independiente, sin dependencias externas y sin entrenamiento dentro del navegador.</p>
+</section>
+</main>
+<script>
+'use strict';
+const $=id=>document.getElementById(id);
+const ids=['epochs','filters','dense','batch','lr'];
+const original={epochs:'5',filters:'16,32',dense:'32',batch:'16',lr:'0.001'};
+const explanations={
+epochs:'Más épocas permiten más actualizaciones de pesos. Pueden mejorar el aprendizaje o aumentar el sobreajuste; examina las curvas de validación.',
+filters:'Más filtros producen más mapas de características y aumentan los parámetros. No garantizan mayor accuracy ni mejor generalización.',
+dense:'Más neuronas densas incrementan la capacidad del clasificador y los parámetros, pero también el costo y el riesgo de sobreajuste.',
+batch:'El batch size modifica el número de actualizaciones por época y el comportamiento del entrenamiento. No modifica los parámetros de la arquitectura.',
+lr:'El learning rate regula el tamaño de los pasos de optimización. Valores demasiado altos pueden dificultar la convergencia; demasiado bajos pueden ralentizarla.'
+};
+function config(){return Object.fromEntries(ids.map(id=>[id,$(id).value]));}
+function count(c){const [f1,f2]=c.filters.split(',').map(Number),d=Number(c.dense);return (3*3*3+1)*f1+(3*3*f1+1)*f2+(30*30*f2+1)*d+(d+1)*3;}
+function code(c){const [f1,f2]=c.filters.split(',');return [
+'# Reutiliza train_ds y val_ds del NB04; inicializa un modelo nuevo.',
+'# Conserva la semilla y las mismas particiones.',
+'import tensorflow as tf',
+'from tensorflow import keras',
+'from tensorflow.keras import layers',
+'',
+'tf.keras.utils.set_random_seed(42)',
+'modelo_experimental = keras.Sequential([',
+'    layers.Input(shape=(128, 128, 3)),',
+'    layers.Conv2D('+f1+', (3, 3), activation="relu"),',
+'    layers.MaxPooling2D((2, 2)),',
+'    layers.Conv2D('+f2+', (3, 3), activation="relu"),',
+'    layers.MaxPooling2D((2, 2)),',
+'    layers.Flatten(),',
+'    layers.Dense('+c.dense+', activation="relu"),',
+'    layers.Dense(3, activation="softmax")',
+'])',
+'modelo_experimental.compile(',
+'    optimizer=keras.optimizers.Adam(learning_rate='+c.lr+'),',
+'    loss="sparse_categorical_crossentropy",',
+'    metrics=["accuracy"]',
+')',
+'',
+'# IMPORTANTE: reconstruye train_ds y val_ds si cambias batch size.',
+'# Tamaño seleccionado: '+c.batch,
+'# Si no cambias batch size, puedes reutilizar los datasets del NB04.',
+'historial_experimental = modelo_experimental.fit(',
+'    train_ds, validation_data=val_ds, epochs='+c.epochs+', verbose=1',
+')',
+'# Compara resultados de VALIDACIÓN antes de utilizar el conjunto de prueba.'
+].join('\n');}
+function update(){
+const c=config(),changed=ids.filter(id=>c[id]!==original[id]),n=count(c),[f1,f2]=c.filters.split(',').map(Number);
+$('epochsVal').textContent=c.epochs;$('denseVal').textContent=c.dense;
+$('params').textContent=n.toLocaleString('es-CL');$('ratio').textContent=(n/count(original)).toFixed(2)+' veces el original ('+count(original).toLocaleString('es-CL')+')';
+$('shape').textContent='30 × 30 × '+f2;$('flat').textContent=(900*f2).toLocaleString('es-CL')+' valores antes de Dense';
+$('steps').textContent=Math.ceil(360/Number(c.batch));
+$('architecture').innerHTML='<table><thead><tr><th>Capa</th><th>Original</th><th>Experimental</th></tr></thead><tbody>'+
+[['Entrada','128×128×3','128×128×3'],['Conv2D + MaxPooling','16 filtros · 63×63',''+f1+' filtros · 63×63'],['Conv2D + MaxPooling','32 filtros · 30×30',f2+' filtros · 30×30'],['Flatten','28.800 valores',(900*f2).toLocaleString('es-CL')+' valores'],['Dense','32 neuronas',c.dense+' neuronas'],['Softmax','3 clases','3 clases']].map(r=>'<tr>'+r.map(v=>'<td>'+v+'</td>').join('')+'</tr>').join('')+'</tbody></table>';
+$('changeFeedback').textContent=changed.length===0?'Configuración original: selecciona un cambio para formular una hipótesis.':changed.length===1?'Un componente modificado ('+changed[0]+'): adecuado para un experimento controlado.':'Atención: has cambiado '+changed.length+' componentes. Para el NB04 se recomienda modificar solo uno y conservar los demás.';
+$('changeFeedback').className='notice'+(changed.length>1?' warning':'');
+$('interpretation').textContent=changed.length?changed.map(k=>explanations[k]).join(' '):'Sin modificaciones: la red tiene la misma arquitectura e hiperparámetros que la CNN inicial.';
+$('code').textContent=code(c);
+}
+function diagnose(){const msg={general:'Este patrón coincide con el caso observado: entrenamiento y validación altos, prueba menor. Investiga diferencias entre conjuntos y errores por clase; no presupongas que la solución es ampliar la red.',overfit:'Cuando entrenamiento es alto y validación baja, considera sobreajuste y revisa regularización, capacidad y datos. No describe exactamente la ejecución observada.',underfit:'Si entrenamiento y validación son bajos, revisa aprendizaje, capacidad, hiperparámetros y calidad de los datos.',unknown:'Es razonable pedir más evidencia: matriz de confusión, ejemplos mal clasificados, curvas y comparación entre conjuntos.'};$('diagnosisFeedback').textContent=msg[$('diagnosis').value];}
+function numeric(id){const e=$(id);if(e.value.trim()==='')return null;const n=Number(e.value);return Number.isFinite(n)&&n>=0&&((id.endsWith('Acc')&&n<=100)||!id.endsWith('Acc'))?n:null;}
+function compare(){const a=numeric('baseAcc'),b=numeric('newAcc'),l=numeric('baseLoss'),m=numeric('newLoss');if([a,b,l,m].some(x=>x===null)){$('comparison').textContent='Ingresa accuracy entre 0 y 100 y loss no negativa de ambos modelos, obtenidas en validación.';return;}
+const da=b-a,dl=m-l,fmt=n=>n.toFixed(2);
+let s='Cambio de accuracy de validación: '+(da>=0?'+':'')+fmt(da)+' puntos porcentuales. Cambio de loss: '+(dl>=0?'+':'')+fmt(dl)+'. ';
+s+=(da>0&&dl<0)?'Ambas métricas favorecen al modelo experimental.':(da<0&&dl>0)?'Ambas métricas favorecen al modelo original.':'Las métricas no ofrecen una mejora inequívoca; examina curvas, variabilidad y costo.';
+const t=numeric('baseTime'),u=numeric('newTime');if(t!==null&&u!==null)s+=' Tiempo: '+fmt(t)+' s → '+fmt(u)+' s.';
+s+=' La comparación es exploratoria y no sustituye la evaluación final sobre prueba.';$('comparison').textContent=s;}
+function report(){const c=config();return ['LABORATORIO CNN — Informe experimental','Configuración: '+JSON.stringify(c),'Parámetros: '+count(c),'Hipótesis: '+$('hypothesis').value,'Accuracy validación original/experimental: '+$('baseAcc').value+' / '+$('newAcc').value,'Loss validación original/experimental: '+$('baseLoss').value+' / '+$('newLoss').value,'Tiempo (s) original/experimental: '+$('baseTime').value+' / '+$('newTime').value,'Interpretación: '+$('comparison').textContent,'Conclusión: '+$('conclusion').value].join('\n');}
+async function copy(t,button){try{await navigator.clipboard.writeText(t);const old=button.textContent;button.textContent='Copiado';setTimeout(()=>button.textContent=old,1500);}catch(e){const el=document.createElement('textarea');el.value=t;document.body.appendChild(el);el.select();document.execCommand('copy');el.remove();button.textContent='Texto seleccionado/copiadο';}}
+ids.forEach(id=>$(id).addEventListener('input',update));$('diagnosis').addEventListener('change',diagnose);$('reset').addEventListener('click',()=>{ids.forEach(id=>$(id).value=original[id]);update();});$('compare').addEventListener('click',compare);$('copyCode').addEventListener('click',()=>copy($('code').textContent,$('copyCode')));$('copyReport').addEventListener('click',()=>copy(report(),$('copyReport')));update();diagnose();
+</script></body></html>
