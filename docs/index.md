@@ -1,45 +1,41 @@
 ---
 layout: default
-title: Recursos docentes
+title: Inicio
 ---
 
-# Recursos docentes de Data Science y Machine Learning
+# Recursos abiertos de Data Science y Machine Learning
 
-Bienvenidas y bienvenidos a este espacio de recursos educativos abiertos. Aquí encontrarás **presentaciones, notebooks de Google Colab, datasets, simuladores interactivos y actividades prácticas** para aprender y enseñar análisis de datos, Machine Learning y Deep Learning.
+**Materiales docentes para aprender, practicar y desarrollar proyectos con Python, análisis de datos y redes neuronales.**
 
-Los materiales se organizan en dos experiencias formativas independientes.
-
----
-
-## Machine Learning 2026
-
-Asignatura de 18 semanas orientada al aprendizaje progresivo de Machine Learning y al desarrollo de un **Proyecto Integrador de clasificación de imágenes con Redes Neuronales Convolucionales (CNN)**.
-
-**Ruta de aprendizaje:** fundamentos y modelos de clasificación → redes neuronales densas (MLP) → preparación de imágenes → CNN → evaluación y experimentación → aplicación y despliegue.
-
-[**Explorar Machine Learning 2026 →**](machine_learning_2026.md)
-
-### Accesos rápidos
-
-- [Notebooks prácticos](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/tree/main/Machine_Learning_2026/03_Notebooks) — ejercicios progresivos en Python y Google Colab.
-- [Datasets del curso](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/tree/main/Machine_Learning_2026/02_Datasets) — conjuntos de datos para las actividades.
-- [Simulador de redes neuronales](Simulador_Redes_Neuronales.html) — decisiones de arquitectura y entrenamiento.
-- [Simulador introductorio de CNN](Simulador_CNN.html) — convoluciones, filtros y dimensiones.
-- [Laboratorio de optimización CNN](Simulador_Laboratorio_Optimizacion_CNN.html) — diagnóstico, hipótesis y comparación de experimentos.
-- [NB04: Introducción práctica a las CNN](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/03_Notebooks/NB04_Introduccion_Practica_CNN.ipynb) — construir, entrenar, evaluar y reflexionar.
+Este portal ofrece acceso a los recursos del repositorio, organizados por **trayectoria formativa** y **tipo de material**. Los enlaces a notebooks permiten trabajar en Google Colab; los simuladores funcionan en el navegador.
 
 ---
 
-## Taller Fundamentos de Data Science con Python — 2025
+## Elige una trayectoria
 
-Recursos del taller dirigido a académicas/os, docentes y estudiantes interesados en incorporar herramientas de **análisis de datos, Python y modelos de IA** a su práctica educativa.
+### [Machine Learning y Deep Learning →](machine_learning_2026.html)
 
-[**Explorar el Taller 2025 →**](taller_2025.md)
+Clasificación, redes neuronales, procesamiento de imágenes, CNN, transferencia de aprendizaje y despliegue de modelos. Incluye **notebooks, presentaciones, datasets, guías, tareas y simuladores**.
+
+### [Fundamentos de Data Science con Python →](taller_2025.html)
+
+Introducción a Python, análisis exploratorio de datos, Machine Learning y actividades integradoras, con presentaciones, notebooks, ejercicios y datasets.
 
 ---
 
-## Repositorio de código y materiales
+## Simuladores interactivos
 
-El sitio reúne accesos a recursos publicados en el repositorio [Taller-Fundamentos-Data-Science-Python](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python). Los simuladores funcionan directamente en el navegador; los notebooks se ejecutan en Google Colab.
+- [**Redes neuronales**](Simulador_Redes_Neuronales.html) — explora capas densas, activaciones e hiperparámetros.
+- [**Introducción a CNN**](Simulador_CNN.html) — comprende convoluciones, filtros, pooling y dimensiones.
+- [**Laboratorio de optimización CNN**](Simulador_Laboratorio_Optimizacion_CNN.html) — formula hipótesis y compara configuraciones con evidencia.
 
-**Sugerencia de uso:** comienza por la página de tu curso y sigue la secuencia de actividades. Los simuladores apoyan la comprensión conceptual y la formulación de hipótesis; los resultados de los modelos deben comprobarse mediante experimentación real.
+---
+
+## Acceso directo a todos los materiales
+
+- [**Catálogo completo de recursos →**](catalogo.html) — índice de archivos navegable por categoría.
+- [**Notebooks y actividades de Machine Learning →**](machine_learning_2026.html#notebooks-en-google-colab)
+- [**Materiales del taller de Data Science →**](taller_2025.html)
+- [**Repositorio completo en GitHub →**](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python)
+
+> **Nota:** los años que aparecen en nombres internos de carpetas o archivos se mantienen para conservar la compatibilidad de los enlaces existentes. La navegación pública está organizada por contenidos y no por año.
