@@ -1,81 +1,74 @@
 ---
-title: Taller Fundamentos de Data Science con Python
+layout: default
+title: Fundamentos de Data Science con Python
 ---
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18705759.svg)](https://doi.org/10.5281/zenodo.18705759)
+# Fundamentos de Data Science con Python
 
-# Taller Fundamentos de Data Science con Python
+[← Inicio](index.html) · [Catálogo completo](catalogo.html)
 
-Repositorio oficial del taller **“Fundamentos de Data Science con Python”**, orientado a académicas/os, docentes y estudiantes que desean incorporar herramientas de análisis de datos y modelos de IA en su práctica educativa.
+Recursos para aprender Python, análisis exploratorio de datos, Machine Learning y fundamentos de Deep Learning mediante actividades prácticas y un proyecto integrador.
 
-[← Portal general](index.html) · [Sesiones](sesiones.html) · [Materiales](materiales.html)
+## Documentación
 
----
+- [Descriptor-Taller.pdf](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/00_Documentacion/Descriptor-Taller.pdf)
 
-## Cómo citar este material
+## Presentaciones
 
-López-Núñez, J. (2026). *Taller Fundamentos de Data Science con Python (Versión 1.0.0).* Zenodo. https://doi.org/10.5281/zenodo.18705759
+- [Sesion1_Introduccion_Python.pdf](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/01_Presentaciones/Sesion1_Introduccion_Python.pdf)
+- [Sesion2_EDA.pdf](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/01_Presentaciones/Sesion2_EDA.pdf)
+- [Sesion3_ML.pdf](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/01_Presentaciones/Sesion3_ML.pdf)
+- [Sesion4_DL.pdf](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/01_Presentaciones/Sesion4_DL.pdf)
+- [Sesion5_CNN.pdf](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/01_Presentaciones/Sesion5_CNN.pdf)
+- [Sesion6_Proyecto-Final.pdf](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/01_Presentaciones/Sesion6_Proyecto-Final.pdf)
 
----
+## Datasets
 
-## Licencia
+- [Ejemplo1.csv](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/02_Datasets/Ejemplo1.csv)
+- [Ejemplo2.csv](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/02_Datasets/Ejemplo2.csv)
+- [datos_estudiantes_200.csv](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/02_Datasets/datos_estudiantes_200.csv)
+- [datos_estudiantes_200_eda.csv](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/02_Datasets/datos_estudiantes_200_eda.csv)
+- [datos_estudiantes_practica.csv](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/02_Datasets/datos_estudiantes_practica.csv)
+- [datos_taller_integrador_STEM.csv](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/02_Datasets/datos_taller_integrador_STEM.csv)
 
-Este material se distribuye bajo licencia **Creative Commons CC BY 4.0**, permitiendo uso y adaptación con atribución:  
-https://creativecommons.org/licenses/by/4.0/
+## Notebooks
 
----
+- **01_Sesion_01.ipynb** — [Abrir en Colab](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/01_Sesion_01.ipynb) · [Ver en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/01_Sesion_01.ipynb)
+- **02_Sesion_02.ipynb** — [Abrir en Colab](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/02_Sesion_02.ipynb) · [Ver en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/02_Sesion_02.ipynb)
+- **03_Sesion_03.ipynb** — [Abrir en Colab](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/03_Sesion_03.ipynb) · [Ver en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/03_Sesion_03.ipynb)
+- **04_Sesion_04.ipynb** — [Abrir en Colab](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/04_Sesion_04.ipynb) · [Ver en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/04_Sesion_04.ipynb)
+- **05_Sesion_05.ipynb** — [Abrir en Colab](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/05_Sesion_05.ipynb) · [Ver en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/05_Sesion_05.ipynb)
 
-## 🎥 Lista de reproducción (YouTube)
+## Ejercicios prácticos
 
-Las clases grabadas del taller se encuentran disponibles en la siguiente lista de reproducción:
+- **01_Sesion1_Guion_Practica.ipynb** — [Abrir en Colab](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/04_Ejercicios_Practicos/01_Sesion1_Guion_Practica.ipynb) · [Ver en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/04_Ejercicios_Practicos/01_Sesion1_Guion_Practica.ipynb)
+- **02_Sesion2_Guion_Practica.ipynb** — [Abrir en Colab](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/04_Ejercicios_Practicos/02_Sesion2_Guion_Practica.ipynb) · [Ver en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/04_Ejercicios_Practicos/02_Sesion2_Guion_Practica.ipynb)
+- **03_Sesion3_Guion_Practica.ipynb** — [Abrir en Colab](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/04_Ejercicios_Practicos/03_Sesion3_Guion_Practica.ipynb) · [Ver en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/04_Ejercicios_Practicos/03_Sesion3_Guion_Practica.ipynb)
+- **04_Sesion4_Guion_Practica.ipynb** — [Abrir en Colab](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/04_Ejercicios_Practicos/04_Sesion4_Guion_Practica.ipynb) · [Ver en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/04_Ejercicios_Practicos/04_Sesion4_Guion_Practica.ipynb)
+- **05_Sesion5_Guion_Practica.ipynb** — [Abrir en Colab](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/04_Ejercicios_Practicos/05_Sesion5_Guion_Practica.ipynb) · [Ver en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/04_Ejercicios_Practicos/05_Sesion5_Guion_Practica.ipynb)
 
-👉 [Ver Lista de Reproducción](https://www.youtube.com/playlist?list=PLrc3rKEj3Qc8MUhUOp6fYlg-f3W3lHX5z)
+## Imágenes de apoyo
 
-Se recomienda seguir el orden de las sesiones y trabajar en paralelo con los notebooks disponibles en este repositorio.
+- [Gato1.jpeg](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/05_Imagenes/Gato1.jpeg)
+- [Gato2.jpeg](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/05_Imagenes/Gato2.jpeg)
+- [Gato3.jpg](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/05_Imagenes/Gato3.jpg)
+- [MoteConHuesillo.jpeg](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/05_Imagenes/MoteConHuesillo.jpeg)
+- [chi_o_muf_1.jpg](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/05_Imagenes/chi_o_muf_1.jpg)
+- [chi_o_muf_2.jpg](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/05_Imagenes/chi_o_muf_2.jpg)
+- [chi_o_muf_3.jpg](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/05_Imagenes/chi_o_muf_3.jpg)
+- [chi_o_muf_4.jpg](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/05_Imagenes/chi_o_muf_4.jpg)
+- [perro1.webp](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/05_Imagenes/perro1.webp)
+- [perro2.jpg](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/05_Imagenes/perro2.jpg)
+- [perro3.jpg](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/05_Imagenes/perro3.jpg)
 
----
+## Proyecto integrador
 
-## Navegación rápida
+- [README.md](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/06_Actividad_Final/README.md)
+- [RUBRICA.md](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/06_Actividad_Final/RUBRICA.md)
+- **Taller_Integrador_STEM_PLANTILLA.ipynb** — [Abrir en Colab](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/06_Actividad_Final/Taller_Integrador_STEM_PLANTILLA.ipynb) · [Ver en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/06_Actividad_Final/Taller_Integrador_STEM_PLANTILLA.ipynb)
 
-- 🏠 **Portal general**: [Inicio](index.html)
-- 📘 **Sesiones**: [sesiones](sesiones.html)
-- 📦 **Materiales**: [materiales](materiales.html)
+## Recurso adicional
 
----
+- [Apuntes de clases — notebook](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Apuntes_Clases.ipynb) · [Abrir en Colab](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Apuntes_Clases.ipynb)
 
-## Público objetivo
-
-- Docentes de educación superior, docentes escolares, profesionales o asistentes académicos.
-- Interés en análisis de datos, evaluación, investigación educativa o innovación docente.
-- No se requiere experiencia previa en programación avanzada, pero sí disposición a trabajar con ejemplos prácticos en Python.
-
----
-
-## Objetivos del taller
-
-Al finalizar el taller, las y los participantes serán capaces de:
-
-- Comprender los conceptos fundamentales de **Data Science** y su ciclo de vida.
-- Manipular datos con **pandas** y **numpy**.
-- Realizar **Análisis Exploratorio de Datos (EDA)** y generar visualizaciones.
-- Implementar modelos básicos de **Machine Learning** con `scikit-learn`.
-- Entrenar modelos sencillos de redes neuronales (**MLP**, **CNN**, **Transfer Learning**) con TensorFlow/Keras.
-- Reflexionar sobre aspectos éticos, sesgos y riesgos en el uso de IA.
-
----
-
-## Cómo usar este repositorio
-
-Puedes abrir los notebooks localmente o directamente en **Google Colab**, recomendado para evitar configuraciones locales.
-
-Para más detalles por sesión, revisa [Sesiones](sesiones.html).
-
-Para acceso directo a PDFs, datasets y notebooks, visita [Materiales](materiales.html).
-
----
-
-## Autoría
-
-**Autor:** Dr. Julio Lopez-Nunez  
-**Institución:** Universidad de las Américas - Chile  
-**Año:** 2025
+[← Inicio](index.html) · [Catálogo completo](catalogo.html)
