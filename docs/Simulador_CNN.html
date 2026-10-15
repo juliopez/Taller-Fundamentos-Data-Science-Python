@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulador CNN — Explorador de Redes Convolucionales</title>
+<style>
+:root{--bg:#0b1020;--panel:#151c33;--text:#f3f6ff;--muted:#aeb9d7;--accent:#6ea8fe;--warn:#ffd166;--line:#2b3862}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#0b1020,#111831 55%,#0b1020);color:var(--text)}
+header{padding:34px 22px 18px;max-width:1200px;margin:auto}
+h1{margin:0 0 8px;font-size:clamp(28px,4vw,48px)}h2{margin-top:0}h3{margin-bottom:8px}
+p{line-height:1.55;color:var(--muted)}.lead{font-size:1.08rem;max-width:920px}
+main{max-width:1200px;margin:auto;padding:0 22px 60px}
+.card{background:rgba(21,28,51,.94);border:1px solid var(--line);border-radius:18px;padding:22px;margin:18px 0;box-shadow:0 14px 34px rgba(0,0,0,.18)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.small{font-size:.92rem;color:var(--muted)}.pill{display:inline-block;padding:5px 10px;border-radius:999px;background:#26345b;color:#dbe7ff;margin:3px 4px 3px 0;font-size:.85rem}
+.controls label{display:block;margin:10px 0 4px;font-size:.9rem;color:#dbe7ff}
+input[type=range]{width:100%}select{width:100%;padding:9px;border-radius:10px;border:1px solid #40507f;background:#0f1730;color:#fff}
+.pipeline{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:center;margin:16px 0}
+.node{background:#1f2a4c;border:1px solid #3b4b79;border-radius:14px;padding:12px 14px;min-width:120px;text-align:center}
+.arrow{font-size:24px;color:var(--accent)}
+.compare{width:100%;border-collapse:collapse;margin-top:10px}.compare th,.compare td{border:1px solid #33436f;padding:10px;text-align:left}.compare th{background:#202b4c}
+pre{background:#0a0f1e;border:1px solid #33436f;border-radius:14px;padding:16px;overflow:auto;color:#dff0ff}
+.note{border-left:4px solid var(--accent);padding:10px 14px;background:#111a34;border-radius:10px;margin:12px 0}.warn{border-left-color:var(--warn)}
+.stage{display:grid;grid-template-columns:minmax(260px,1fr) minmax(260px,1fr);gap:20px}@media(max-width:800px){.stage{grid-template-columns:1fr}}
+canvas{width:100%;max-width:460px;background:#fff;border-radius:14px;border:1px solid #394a79;display:block;margin:auto}
+.metric{font-size:1.7rem;font-weight:700}.kbd{font-family:ui-monospace,monospace;background:#0c1327;padding:2px 6px;border-radius:6px}
+button{background:#2b5fb8;color:white;border:0;padding:10px 14px;border-radius:10px;cursor:pointer;font-weight:600;margin:4px}button.secondary{background:#29385f}
+.footer{color:#8f9ab9;font-size:.88rem;text-align:center;margin-top:28px}
+</style>
+</head>
+<body>
+<header>
+<span class="pill">Machine Learning 2026</span><span class="pill">Visión computacional</span><span class="pill">CNN</span>
+<h1>Simulador interactivo de Redes Neuronales Convolucionales</h1>
+<p class="lead">Explora cómo una imagen atraviesa una CNN: convolución, activación, pooling, aplanado y clasificación. El objetivo es comprender <strong>qué cambia en cada etapa</strong> antes de construir una CNN completa en Keras.</p>
+</header>
+<main>
+<section class="card">
+<h2>1. De una red densa a una CNN</h2>
+<table class="compare">
+<tr><th>Red densa que ya conoces</th><th>Red convolucional</th></tr>
+<tr><td><span class="kbd">Dense(32)</span></td><td><span class="kbd">Conv2D(32, 3)</span></td></tr>
+<tr><td>32 neuronas</td><td>32 filtros</td></tr>
+<tr><td>Trabaja con vectores</td><td>Trabaja preservando estructura espacial</td></tr>
+<tr><td>Aprende relaciones globales entre variables</td><td>Aprende patrones locales: bordes, texturas, formas</td></tr>
+<tr><td><span class="kbd">Dense → Dense → Softmax</span></td><td><span class="kbd">Conv → Pool → Conv → Pool → Dense → Softmax</span></td></tr>
+</table>
+<div class="note"><strong>Idea clave:</strong> en una CNN, la parte final con <span class="kbd">Dense</span> y <span class="kbd">Softmax</span> ya te resulta familiar. Lo nuevo es cómo la red transforma la imagen antes de clasificarla.</div>
+</section>
+
+<section class="card">
+<h2>2. Anatomía de una CNN básica</h2>
+<div class="pipeline" id="pipeline"></div>
+<p class="small">La arquitectura mostrada es deliberadamente simple para aprender. Más capas o más filtros no significan automáticamente un mejor modelo.</p>
+</section>
+
+<section class="card">
+<h2>3. Configura la red y observa las dimensiones</h2>
+<div class="grid controls">
+<div><label>Tamaño de imagen</label><select id="imgSize"><option value="64">64 × 64</option><option value="128">128 × 128</option><option value="224" selected>224 × 224</option></select><label>Número de clases</label><input id="classes" type="range" min="2" max="10" value="4"><div><span id="classesV">4</span> clases</div></div>
+<div><label>Filtros Conv2D bloque 1</label><input id="f1" type="range" min="8" max="64" step="8" value="32"><div><span id="f1v">32</span> filtros</div><label>Kernel bloque 1</label><select id="k1"><option value="3" selected>3 × 3</option><option value="5">5 × 5</option><option value="7">7 × 7</option></select></div>
+<div><label>Filtros Conv2D bloque 2</label><input id="f2" type="range" min="16" max="128" step="16" value="64"><div><span id="f2v">64</span> filtros</div><label>Pooling</label><select id="pool"><option value="2" selected>2 × 2</option><option value="3">3 × 3</option></select></div>
+<div><label>Padding</label><select id="padding"><option value="same" selected>same</option><option value="valid">valid</option></select><label>Neuronas Dense</label><input id="dense" type="range" min="16" max="256" step="16" value="64"><div><span id="denseV">64</span> neuronas</div></div>
+</div>
+<div class="grid" style="margin-top:18px">
+<div class="card" style="margin:0"><div class="small">Entrada</div><div class="metric" id="dim0"></div></div>
+<div class="card" style="margin:0"><div class="small">Después de Conv1</div><div class="metric" id="dim1"></div></div>
+<div class="card" style="margin:0"><div class="small">Después de Pool1</div><div class="metric" id="dim2"></div></div>
+<div class="card" style="margin:0"><div class="small">Después de Conv2</div><div class="metric" id="dim3"></div></div>
+<div class="card" style="margin:0"><div class="small">Después de Pool2</div><div class="metric" id="dim4"></div></div>
+<div class="card" style="margin:0"><div class="small">Flatten</div><div class="metric" id="flat"></div></div>
+</div>
+<div class="note warn" id="paramWarn"></div>
+</section>
+
+<section class="card">
+<h2>4. ¿Qué hace cada capa?</h2>
+<div class="grid">
+<div><h3>Conv2D</h3><p>Aplica pequeños filtros sobre regiones locales de la imagen. Cada filtro aprende a responder ante un patrón distinto.</p></div>
+<div><h3>ReLU</h3><p>Introduce no linealidad. Mantiene valores positivos y lleva los negativos a cero.</p></div>
+<div><h3>MaxPooling2D</h3><p>Reduce la resolución espacial conservando activaciones relevantes y disminuyendo el costo computacional.</p></div>
+<div><h3>Flatten</h3><p>Convierte los mapas de características en un vector para conectarlos con capas densas.</p></div>
+<div><h3>Dense</h3><p>Combina las características extraídas por la CNN para apoyar la clasificación.</p></div>
+<div><h3>Softmax</h3><p>Entrega una distribución de probabilidad sobre las clases.</p></div>
+</div>
+</section>
+
+<section class="card">
+<h2>5. Visualiza el efecto de una convolución</h2>
+<div class="stage">
+<div><h3>Imagen de ejemplo</h3><canvas id="src" width="280" height="280"></canvas><div style="text-align:center;margin-top:10px"><button id="drawEdge">Patrón con bordes</button><button id="drawBlob" class="secondary">Patrón circular</button></div></div>
+<div><h3>Mapa de características conceptual</h3><canvas id="feat" width="280" height="280"></canvas><p class="small">Esta visualización es conceptual: muestra cómo un filtro puede resaltar regiones donde detecta un patrón. En una CNN real los valores del filtro son aprendidos durante el entrenamiento.</p></div>
+</div>
+</section>
+
+<section class="card">
+<h2>6. Generador de arquitectura Keras</h2>
+<pre id="code"></pre>
+<div class="note"><strong>Observa:</strong> <span class="kbd">Conv2D(32, 3)</span> significa 32 filtros de tamaño 3×3; <span class="kbd">Dense(64)</span> significa 64 neuronas.</div>
+</section>
+
+<section class="card">
+<h2>7. Lectura guiada de la arquitectura</h2>
+<div id="reading"></div>
+</section>
+
+<section class="card">
+<h2>8. Desafíos rápidos</h2>
+<div class="grid">
+<div><h3>Desafío A</h3><p>Cambia <strong>padding</strong> de <span class="kbd">same</span> a <span class="kbd">valid</span>. ¿Qué ocurre con las dimensiones?</p></div>
+<div><h3>Desafío B</h3><p>Aumenta filtros de 32 a 64. ¿Cambia el ancho y alto? ¿Qué dimensión sí cambia?</p></div>
+<div><h3>Desafío C</h3><p>Observa el tamaño de <span class="kbd">Flatten</span>. ¿Por qué puede producir demasiados parámetros?</p></div>
+<div><h3>Desafío D</h3><p>Sube el tamaño de la imagen a 224×224. ¿Qué efecto tiene sobre el vector antes de Dense?</p></div>
+</div>
+</section>
+
+<section class="card">
+<h2>9. Puente hacia el NB04</h2>
+<div class="pipeline"><div class="node">Dataset preparado</div><div class="arrow">→</div><div class="node">Primera CNN básica</div><div class="arrow">→</div><div class="node">Entrenamiento</div><div class="arrow">→</div><div class="node">Curvas y métricas</div><div class="arrow">→</div><div class="node">CNN más completa</div></div>
+</section>
+<div class="footer">Recurso didáctico — Curso Machine Learning 2026</div>
+</main>
+<script>
+const qs=id=>document.getElementById(id);
+function convOut(n,k,padding){return padding==='same'?n:Math.max(1,n-k+1)}
+function poolOut(n,p){return Math.floor(n/p)}
+function fmt(n){return n.toLocaleString('es-CL')}
+function update(){
+ const s=+qs('imgSize').value, cls=+qs('classes').value, f1=+qs('f1').value, f2=+qs('f2').value, k1=+qs('k1').value, p=+qs('pool').value, pad=qs('padding').value, dense=+qs('dense').value;
+ qs('classesV').textContent=cls;qs('f1v').textContent=f1;qs('f2v').textContent=f2;qs('denseV').textContent=dense;
+ const a=convOut(s,k1,pad), b=poolOut(a,p), c=convOut(b,3,pad), d=poolOut(c,p), flat=d*d*f2;
+ qs('dim0').textContent=s+'×'+s+'×3';qs('dim1').textContent=a+'×'+a+'×'+f1;qs('dim2').textContent=b+'×'+b+'×'+f1;qs('dim3').textContent=c+'×'+c+'×'+f2;qs('dim4').textContent=d+'×'+d+'×'+f2;qs('flat').textContent=fmt(flat)+' valores';
+ const items=[
+ 'Entrada<br><b>'+s+'×'+s+'×3</b>',
+ 'Conv2D('+f1+')<br><small>'+k1+'×'+k1+', '+pad+'</small>',
+ 'MaxPool<br><small>'+p+'×'+p+'</small>',
+ 'Conv2D('+f2+')<br><small>3×3, '+pad+'</small>',
+ 'MaxPool<br><small>'+p+'×'+p+'</small>',
+ 'Flatten<br><b>'+fmt(flat)+'</b>',
+ 'Dense('+dense+')',
+ 'Softmax<br><b>'+cls+' clases</b>'
+ ];
+ qs('pipeline').innerHTML=items.map((x,i)=>'<div class="node">'+x+'</div>'+(i<items.length-1?'<div class="arrow">→</div>':'')).join('');
+ const denseParams=flat*dense+dense;
+ qs('paramWarn').innerHTML='Con esta configuración, solo la capa <strong>Dense('+dense+')</strong> posterior a Flatten tendría aproximadamente <strong>'+fmt(denseParams)+'</strong> parámetros. Si este número crece demasiado, en arquitecturas posteriores puede ser conveniente usar <span class="kbd">GlobalAveragePooling2D</span>.';
+ qs('code').textContent='model = keras.Sequential([\n    layers.Input(shape=('+s+', '+s+', 3)),\n\n    layers.Conv2D('+f1+', ('+k1+', '+k1+'), activation="relu", padding="'+pad+'"),\n    layers.MaxPooling2D(('+p+', '+p+')),\n\n    layers.Conv2D('+f2+', (3, 3), activation="relu", padding="'+pad+'"),\n    layers.MaxPooling2D(('+p+', '+p+')),\n\n    layers.Flatten(),\n    layers.Dense('+dense+', activation="relu"),\n    layers.Dense('+cls+', activation="softmax")\n])\n\nmodel.compile(\n    optimizer="adam",\n    loss="sparse_categorical_crossentropy",\n    metrics=["accuracy"]\n)';
+ qs('reading').innerHTML='<p><strong>1.</strong> Entrada: <span class="kbd">'+s+'×'+s+'×3</span>.</p><p><strong>2.</strong> La primera convolución aprende <strong>'+f1+' filtros</strong>.</p><p><strong>3.</strong> El pooling reduce de <strong>'+a+'×'+a+'</strong> a <strong>'+b+'×'+b+'</strong>.</p><p><strong>4.</strong> La segunda convolución produce <strong>'+f2+' mapas de características</strong>.</p><p><strong>5.</strong> Después del segundo pooling quedan <strong>'+d+'×'+d+'×'+f2+'</strong> activaciones.</p><p><strong>6.</strong> Flatten las transforma en <strong>'+fmt(flat)+' valores</strong>.</p><p><strong>7.</strong> Dense('+dense+') combina esas características y Softmax entrega probabilidades para <strong>'+cls+' clases</strong>.</p>';
+}
+['imgSize','classes','f1','f2','k1','pool','padding','dense'].forEach(id=>qs(id).addEventListener('input',update));
+function drawBase(type){
+ const c=qs('src'),x=c.getContext('2d');x.fillStyle='#f7f7f7';x.fillRect(0,0,c.width,c.height);x.strokeStyle='#222';x.lineWidth=14;x.fillStyle='#333';
+ if(type==='edge'){x.beginPath();x.moveTo(50,230);x.lineTo(230,50);x.stroke();x.strokeRect(55,55,95,95)}
+ else{x.beginPath();x.arc(140,140,75,0,Math.PI*2);x.fill();x.fillStyle='#bbb';x.fillRect(35,35,60,60)}
+ featureFromSource();
+}
+function featureFromSource(){
+ const s=qs('src'),f=qs('feat'),sx=s.getContext('2d'),fx=f.getContext('2d');const im=sx.getImageData(0,0,s.width,s.height),out=fx.createImageData(f.width,f.height),w=s.width,h=s.height,gray=new Float32Array(w*h);
+ for(let i=0;i<w*h;i++){const j=i*4;gray[i]=.299*im.data[j]+.587*im.data[j+1]+.114*im.data[j+2]}
+ for(let y=1;y<h-1;y++)for(let x=1;x<w-1;x++){const gx=-gray[(y-1)*w+x-1]-2*gray[y*w+x-1]-gray[(y+1)*w+x-1]+gray[(y-1)*w+x+1]+2*gray[y*w+x+1]+gray[(y+1)*w+x+1];const gy=-gray[(y-1)*w+x-1]-2*gray[(y-1)*w+x]-gray[(y-1)*w+x+1]+gray[(y+1)*w+x-1]+2*gray[(y+1)*w+x]+gray[(y+1)*w+x+1];const v=Math.min(255,Math.sqrt(gx*gx+gy*gy)),j=(y*w+x)*4;out.data[j]=out.data[j+1]=out.data[j+2]=v;out.data[j+3]=255}
+ fx.putImageData(out,0,0);
+}
+qs('drawEdge').onclick=()=>drawBase('edge');qs('drawBlob').onclick=()=>drawBase('blob');drawBase('edge');update();
+</script>
+</body></html>
