@@ -5,6 +5,14 @@ title: Inicio
 
 <link rel="stylesheet" href="assets/css/portal.css">
 
+<nav class="portal-nav" aria-label="Navegación principal">
+  <a href="index.html" aria-current="page">Inicio</a>
+  <a href="taller_2025.html">Data Science con Python</a>
+  <a href="machine_learning_2026.html">Machine Learning</a>
+  <a href="catalogo.html">Catálogo completo</a>
+</nav>
+
+
 <div class="portal-hero">
   <p class="portal-eyebrow">RECURSOS EDUCATIVOS ABIERTOS</p>
   <h1>Aprende Data Science y Machine Learning</h1>
