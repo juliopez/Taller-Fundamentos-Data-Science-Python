@@ -1,5 +1,5 @@
 # Diccionario de datos
-## Dataset sintético de preferencia política — Evaluación 2
+## Dataset sintético de preferencia política — Clasificación multiclase
 
 ### 1. Propósito
 Este conjunto de datos fue creado **exclusivamente con fines pedagógicos** para una actividad de Machine Learning de clasificación multiclase. Contiene **5.000 observaciones completamente sintéticas** y no corresponde a personas reales, encuestados reales ni registros administrativos.
