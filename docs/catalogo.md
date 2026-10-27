@@ -3,9 +3,20 @@ layout: default
 title: Catálogo de recursos
 ---
 
+<link rel="stylesheet" href="assets/css/portal.css">
+
+<nav class="portal-nav" aria-label="Navegación principal">
+  <a href="index.html">Inicio</a>
+  <a href="taller_2025.html">Data Science con Python</a>
+  <a href="machine_learning_2026.html">Machine Learning</a>
+  <a href="catalogo.html" aria-current="page">Catálogo completo</a>
+</nav>
+
+
 # Catálogo completo de recursos
 
-[← Inicio](index.html) · [Machine Learning](machine_learning_2026.html) · [Data Science con Python](taller_2025.html)
+<p class="portal-lead">Encuentra los materiales por área y tipo de recurso. Para comenzar, consulta las guías de aprendizaje autónomo; después explora el inventario documental.</p>
+
 
 Este índice reúne **materiales educativos abiertos** identificados en el repositorio. Puedes consultarlos a tu propio ritmo. Algunos archivos históricos conservan nombres de semanas o sesiones para preservar sus enlaces originales; **no representan un calendario de estudio obligatorio**. Los archivos de configuración interna, imágenes decorativas del sitio y duplicados técnicos para publicación web no se muestran como materiales independientes.
 
