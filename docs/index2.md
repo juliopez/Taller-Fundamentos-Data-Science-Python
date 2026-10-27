@@ -1,6 +1,17 @@
 ---
+layout: default
 title: Taller Fundamentos de Data Science con Python
 ---
+
+<link rel="stylesheet" href="assets/css/portal.css">
+
+<nav class="portal-nav" aria-label="Navegación principal">
+<a href="index.html">Inicio</a>
+<a href="taller_2025.html">Data Science con Python</a>
+<a href="machine_learning_2026.html">Machine Learning</a>
+<a href="catalogo.html">Catálogo completo</a>
+</nav>
+
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18705759.svg)](https://doi.org/10.5281/zenodo.18705759)
 
@@ -32,24 +43,6 @@ Las clases grabadas del taller se encuentran disponibles en la siguiente lista d
 Se recomienda seguir el orden de las sesiones y trabajar en paralelo con los notebooks disponibles en este repositorio.
 
 ---
-
-<nav class="main-nav">
-  <a href="index">Inicio</a> |
-  <a href="sesiones">Sesiones</a> |
-  <a href="materiales">Materiales</a>
-</nav>
-<script>
-  /* Detectar página activa */
-  const path = window.location.pathname;
-
-  document.querySelectorAll('.main-nav .nav-link').forEach(link => {
-    if (path.includes(link.getAttribute('href'))) {
-      link.classList.add('active');
-    }
-  });
-</script>
-
-
 
 ## Navegación rápida
 
@@ -151,9 +144,9 @@ Allí encontrarás los archivos `.csv` utilizados en cada sesión.
 
 ---
 
-Para más detalles por sesión, revisa la sección [Sesiones](sesiones.md)
+Para más detalles por sesión, revisa la sección [Sesiones](sesiones.html)
 
-Para acceso directo a PDFs, datasets y notebooks, visita  · [Materiales](materiales.md)
+Para acceso directo a PDFs, datasets y notebooks, visita  · [Materiales](materiales.html)
 
 ---
 ## Autoría
