@@ -5,12 +5,8 @@ title: Taller Fundamentos de Data Science con Python
 
 <link rel="stylesheet" href="assets/css/portal.css">
 
-<nav class="portal-nav" aria-label="Navegación principal">
-<a href="index.html">Inicio</a>
-<a href="taller_2025.html">Data Science con Python</a>
-<a href="machine_learning_2026.html">Machine Learning</a>
-<a href="catalogo.html">Catálogo completo</a>
-</nav>
+<nav class="portal-nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="rutas.html">Rutas de aprendizaje</a><a href="biblioteca.html">Biblioteca</a><a href="laboratorio.html">Laboratorio</a><a href="acerca.html">Acerca del proyecto</a></nav>
+<p class="portal-context"><a href="rutas.html">Rutas de aprendizaje</a> / Documento histórico. Esta página conserva documentación de origen; para comenzar sin conocimientos previos, consulta las rutas.</p>
 
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18705759.svg)](https://doi.org/10.5281/zenodo.18705759)
