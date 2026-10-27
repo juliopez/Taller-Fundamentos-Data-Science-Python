@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Laboratorio CNN — Diagnosticar, experimentar y fundamentar</title>
+<link rel="stylesheet" href="assets/css/simuladores.css">
+
 <style>
 :root{--bg:#f3f7fb;--ink:#183348;--muted:#586f81;--card:#fff;--line:#d5e1eb;--accent:#126c9b;--soft:#eaf4fb;--ok:#146c50;--warn:#9b6112}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
@@ -18,7 +20,11 @@ svg{width:100%;height:auto;max-height:320px} .pill{display:inline-block;backgrou
 details{padding:12px;border:1px solid var(--line);border-radius:9px;margin:8px 0}summary{cursor:pointer;font-weight:700}
 @media(max-width:640px){.metrics{grid-template-columns:1fr} .card{padding:15px}}
 </style></head>
-<body><header><h1>Laboratorio de optimización y generalización de CNN</h1>
+<body>
+<nav class="sim-site-nav" aria-label="Navegación del portal">
+<a href="index.html">Inicio</a><a href="machine_learning_2026.html">Machine Learning</a><a href="catalogo.html">Catálogo</a><span aria-hidden="true">/</span><span class="sim-current">Simulador interactivo</span>
+</nav>
+<header><h1>Laboratorio de optimización y generalización de CNN</h1>
 <p>Simulador interactivo para la sección 13 del NB04 · Piedra, papel o tijeras · <b>Diagnosticar → Experimentar → Fundamentar</b></p>
 <p>Los cambios de arquitectura y los parámetros se calculan. Los resultados predictivos <b>no se inventan</b>: se obtienen entrenando realmente en Google Colab.</p></header>
 <main>
