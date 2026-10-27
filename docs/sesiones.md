@@ -6,21 +6,15 @@ description: Revisa los contenidos, objetivos y enfoque de trabajo de cada una d
 
 ---
 
-<nav class="main-nav">
-  <a href="index">Inicio</a> |
-  <a href="sesiones">Sesiones</a> |
-  <a href="materiales">Materiales</a>
-</nav>
-<script>
-  /* Detectar página activa */
-  const path = window.location.pathname;
+<link rel="stylesheet" href="assets/css/portal.css">
 
-  document.querySelectorAll('.main-nav .nav-link').forEach(link => {
-    if (path.includes(link.getAttribute('href'))) {
-      link.classList.add('active');
-    }
-  });
-</script>
+<nav class="portal-nav" aria-label="Navegación principal">
+<a href="index.html">Inicio</a>
+<a href="taller_2025.html">Data Science con Python</a>
+<a href="machine_learning_2026.html">Machine Learning</a>
+<a href="catalogo.html">Catálogo completo</a>
+</nav>
+
 
 # Sesiones del taller
 
