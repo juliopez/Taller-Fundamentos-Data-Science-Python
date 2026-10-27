@@ -23,6 +23,17 @@ Los simuladores son recursos de apoyo; el entrenamiento y la evaluación se real
 
 ## Notebooks en Google Colab
 
+Consulta la [**guía de los diez notebooks**](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/03_Notebooks/README.md), que explica por dónde comenzar según tus conocimientos y ofrece enlaces directos para ejecutarlos en Colab.
+
+### Recorrido práctico para aprender CNN
+
+1. **NB03 — Preparar imágenes:** limpieza, etiquetado, particiones y pipeline de datos.
+2. **NB04 — Entrenar una primera CNN:** ejemplo guiado de piedra, papel o tijeras.
+3. **NB05 — Trabajar con imágenes propias:** adaptar y comparar modelos.
+4. **NB06–NB08 — Profundizar:** modelos preentrenados, optimización, interoperabilidad y despliegue.
+
+Puedes utilizar los notebooks por separado. La numeración indica una progresión sugerida, no semanas ni evaluaciones.
+
 - **NB00 EDA Automatico ydata profiling** — [Abrir en Colab](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/03_Notebooks/NB00_EDA_Automatico_ydata_profiling.ipynb) · [Ver código en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/03_Notebooks/NB00_EDA_Automatico_ydata_profiling.ipynb)
 - **NB00 Nivelacion Datos Machine Learning** — [Abrir en Colab](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/03_Notebooks/NB00_Nivelacion_Datos_Machine_Learning.ipynb) · [Ver código en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/03_Notebooks/NB00_Nivelacion_Datos_Machine_Learning.ipynb)
 - **NB01 Introduccion Redes Neuronales** — [Abrir en Colab](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/03_Notebooks/NB01_Introduccion_Redes_Neuronales.ipynb) · [Ver código en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/03_Notebooks/NB01_Introduccion_Redes_Neuronales.ipynb)
@@ -34,77 +45,22 @@ Los simuladores son recursos de apoyo; el entrenamiento y la evaluación se real
 - **NB07 Optimizacion Interoperabilidad ONNX** — [Abrir en Colab](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/03_Notebooks/NB07_Optimizacion_Interoperabilidad_ONNX.ipynb) · [Ver código en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/03_Notebooks/NB07_Optimizacion_Interoperabilidad_ONNX.ipynb)
 - **NB08 Aplicacion Despliegue Modelo** — [Abrir en Colab](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/03_Notebooks/NB08_Aplicacion_Despliegue_Modelo.ipynb) · [Ver código en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/03_Notebooks/NB08_Aplicacion_Despliegue_Modelo.ipynb)
 
-## Presentaciones
+## Datasets y guías de preparación
 
-- [Semana 01](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/01_Presentaciones/Semana_01.pdf)
-- [Semana 02](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/01_Presentaciones/Semana_02.pdf)
-- [Semana 03](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/01_Presentaciones/Semana_03.pdf)
-- [Semana 04](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/01_Presentaciones/Semana_04.pdf)
-- [Semana 05](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/01_Presentaciones/Semana_05.pdf)
-- [Semana 06](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/01_Presentaciones/Semana_06.pdf)
-- [Semana 07](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/01_Presentaciones/Semana_07.pdf)
-- [Semana 08](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/01_Presentaciones/Semana_08.pdf)
-- [Semana 09](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/01_Presentaciones/Semana_09.pdf)
-- [Semana 10](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/01_Presentaciones/Semana_10.pdf)
-- [Semana 11](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/01_Presentaciones/Semana_11.pdf)
-- [Semana 12](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/01_Presentaciones/Semana_12.pdf)
-- [Semana 13](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/01_Presentaciones/Semana_13.pdf)
-- [Semana 14](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/01_Presentaciones/Semana_14.pdf)
-- [Semana 15](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/01_Presentaciones/Semana_15.pdf)
-- [Semana 16](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/01_Presentaciones/Semana_16.pdf)
-- [Semana 17](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/01_Presentaciones/Semana_17.pdf)
-- [Semana 18](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/01_Presentaciones/Semana_18.pdf)
+Comienza por el [**catálogo de datasets y diccionarios de datos**](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/02_Datasets/README.md). Incluye conjuntos de datos tabulares, ejemplos sintéticos y el dataset de imágenes de piedra, papel o tijeras.
 
-## Datasets y diccionarios de datos
-
-- [01_Diccionaro_Datos_clientes_retail_video_limpieza.md](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/02_Datasets/01_Diccionaro_Datos_clientes_retail_video_limpieza.md)
-- [01_clientes_retail_video_limpieza.csv](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/02_Datasets/01_clientes_retail_video_limpieza.csv)
-- [02_Diccionario_Datos_Encuesta_Participacion_Opinion_Ciudadana_2026.md](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/02_Datasets/02_Diccionario_Datos_Encuesta_Participacion_Opinion_Ciudadana_2026.md)
-- [02_Encuesta_Participacion_Opinion_Ciudadana_2026.csv](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/02_Datasets/02_Encuesta_Participacion_Opinion_Ciudadana_2026.csv)
-- [03_Diccionario_Datos_Preferencia_Politica.md](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/02_Datasets/03_Diccionario_Datos_Preferencia_Politica.md)
-- [03_Preferencia_Politica_Sintetica.csv](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/02_Datasets/03_Preferencia_Politica_Sintetica.csv)
-- [dataset_cnn_paper.zip](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/02_Datasets/dataset_cnn/dataset_cnn_paper.zip)
-- [dataset_cnn_rock.zip](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/02_Datasets/dataset_cnn/dataset_cnn_rock.zip)
-- [dataset_cnn_scissors.zip](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/02_Datasets/dataset_cnn/dataset_cnn_scissors.zip)
-
-## Guías y documentación
-
-- [README](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/README.md)
-- [Semana 02](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/Semana_02.md)
-- [Semana 03](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/Semana_03.md)
-- [Semana 04](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/Semana_04.md)
-- [Semana 05](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/Semana_05.md)
-- [Semana 06](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/Semana_06.md)
-- [Semana 07](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/Semana_07.md)
-- [Semana 08](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/Semana_08.md)
-- [Semana 09](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/Semana_09.md)
-- [Semana 10](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/Semana_10.md)
-- [Semana 11](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/Semana_11.md)
-- [Semana 12](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/Semana_12.md)
-- [Semana 13](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/Semana_13.md)
-- [Semana 14](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/Semana_14.md)
-- [Semana 15](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/Semana_15.md)
-- [Semana 16](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/Semana_16.md)
-- [Semana 17](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/Semana_17.md)
-- [Semana 18](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/Semana_18.md)
+- [Guía del dataset de imágenes para la primera CNN](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/02_Datasets/dataset_cnn/README.md)
+- [Ruta de notebooks con recomendaciones para aprender de forma autónoma](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/03_Notebooks/README.md)
 
 ## Recursos de consulta
 
-- [Metricas_Evaluacion_Modelos_Machine_Learning.md](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/04_Recursos/Metricas_Evaluacion_Modelos_Machine_Learning.md)
-- [overfitting.png](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/04_Recursos/overfitting.png)
-- [underfitting.png](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/04_Recursos/underfitting.png)
+La [**biblioteca de recursos complementarios**](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/04_Recursos/README.md) reúne una guía de métricas para clasificación y regresión, así como ilustraciones para reconocer *overfitting* y *underfitting*.
 
-## Actividades y tareas
+## Presentaciones y documentación de origen
 
-- [Tarea_01.md](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/05_Tareas/Tarea_01.md)
+Las [presentaciones en PDF](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/tree/main/Machine_Learning_2026/01_Presentaciones) y las [guías históricas](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/tree/main/Machine_Learning_2026/00_Documentacion) conservan sus nombres de archivo originales, incluidos los identificadores de semana, para mantener sus enlaces. **Esos identificadores no establecen un calendario ni son requisitos para utilizar los recursos de forma autónoma.**
 
-## Documentación general del curso
-
-- [Presentación y estructura de los materiales](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/README.md)
-- [Guía del directorio de notebooks](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/03_Notebooks/README.md)
-- [Guía de datasets](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/02_Datasets/README.md)
-- [Instrucciones del dataset CNN](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/02_Datasets/dataset_cnn/README.md)
-- [Guía de presentaciones](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/01_Presentaciones/README.md)
+El [material de actividades](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/tree/main/Machine_Learning_2026/05_Tareas) se ofrece como práctica opcional; las referencias originales a evaluaciones pertenecen al contexto en que se creó ese material.
 
 ---
 
