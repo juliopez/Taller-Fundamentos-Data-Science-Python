@@ -6,21 +6,14 @@ description: Accede a los notebooks base, datasets de práctica, presentaciones 
 
 ---
 
-<nav class="main-nav">
-  <a href="index">Inicio</a> |
-  <a href="sesiones">Sesiones</a> |
-  <a href="materiales">Materiales</a>
-</nav>
-<script>
-  /* Detectar página activa */
-  const path = window.location.pathname;
+<link rel="stylesheet" href="assets/css/portal.css">
 
-  document.querySelectorAll('.main-nav .nav-link').forEach(link => {
-    if (path.includes(link.getAttribute('href'))) {
-      link.classList.add('active');
-    }
-  });
-</script>
+<nav class="portal-nav" aria-label="Navegación principal">
+<a href="index.html">Inicio</a>
+<a href="taller_2025.html">Data Science con Python</a>
+<a href="machine_learning_2026.html">Machine Learning</a>
+<a href="catalogo.html">Catálogo completo</a>
+</nav>
 
 
 # Materiales del taller
@@ -80,11 +73,11 @@ Notebooks sugeridos para trabajar durante las sesiones:
   [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/01_Sesion_01.ipynb)
 - Sesión 2 — Análisis Exploratorio de Datos (EDA) [`02_Sesion_02.ipynb` en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/02_Sesion_02.ipynb)  
   [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/02_Sesion_02.ipynb)
-- Sesión 3 — Introducción a Machine Learning [`03_Sesion_03.ipynb` en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/02_Sesion_02.ipynb)  
+- Sesión 3 — Introducción a Machine Learning [`03_Sesion_03.ipynb` en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/03_Sesion_03.ipynb)  
   [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/03_Sesion_03.ipynb)
-- Sesión 4 — Introducción al Deep Learning [`04_Sesion_04.ipynb` en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/02_Sesion_02.ipynb)  
+- Sesión 4 — Introducción al Deep Learning [`04_Sesion_04.ipynb` en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/04_Sesion_04.ipynb)  
   [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/04_Sesion_04.ipynb)
-- Sesión 5 — CNN, Transfer Learning y Ética en IA [`05_Sesion_05.ipynb` en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/02_Sesion_02.ipynb)  
+- Sesión 5 — CNN, Transfer Learning y Ética en IA [`05_Sesion_05.ipynb` en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/05_Sesion_05.ipynb)  
   [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/03_Notebooks/05_Sesion_05.ipynb)
 
 Carpeta general: `03_Notebooks/` [Abrir en GitHub](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/tree/main/03_Notebooks)
