@@ -7,11 +7,20 @@ title: Catálogo de recursos
 
 [← Inicio](index.html) · [Machine Learning](machine_learning_2026.html) · [Data Science con Python](taller_2025.html)
 
-Este índice recoge los **archivos educativos y de documentación pública** identificados en el repositorio. Los archivos de configuración interna, imágenes decorativas del sitio y duplicados técnicos para publicación web no se muestran como materiales independientes.
+Este índice reúne **materiales educativos abiertos** identificados en el repositorio. Puedes consultarlos a tu propio ritmo. Algunos archivos históricos conservan nombres de semanas o sesiones para preservar sus enlaces originales; **no representan un calendario de estudio obligatorio**. Los archivos de configuración interna, imágenes decorativas del sitio y duplicados técnicos para publicación web no se muestran como materiales independientes.
+
+## Comienza aquí: guías para aprender de forma autónoma
+
+- [**Ruta de notebooks de Machine Learning**](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/03_Notebooks/README.md): itinerarios según tu experiencia y enlaces para abrir los notebooks en Google Colab.
+- [**Catálogo de datasets**](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/02_Datasets/README.md): archivos, diccionarios de datos y recomendaciones de uso.
+- [**Recursos de consulta**](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/04_Recursos/README.md): métricas, sobreajuste y subajuste.
+- [**Guía del dataset para la primera CNN**](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/02_Datasets/dataset_cnn/README.md): preparación de imágenes y carga en Colab.
+
+Los listados siguientes son un **inventario documental** y pueden conservar identificadores históricos en los nombres de archivo.
 
 ## Machine Learning y Deep Learning
 
-### Documentación
+### Documentación de origen (archivos históricos)
 
 - [README.md](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/README.md)
 - [Semana_02.md](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/Semana_02.md)
@@ -32,7 +41,7 @@ Este índice recoge los **archivos educativos y de documentación pública** ide
 - [Semana_17.md](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/Semana_17.md)
 - [Semana_18.md](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/00_Documentacion/Semana_18.md)
 
-### Presentaciones
+### Presentaciones (nombres de archivo originales)
 
 - [README.md](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/01_Presentaciones/README.md)
 - [Semana_01.pdf](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/01_Presentaciones/Semana_01.pdf)
