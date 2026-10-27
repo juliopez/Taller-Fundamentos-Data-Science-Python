@@ -4,69 +4,20 @@ title: Inicio
 ---
 
 <link rel="stylesheet" href="assets/css/portal.css">
+<nav class="portal-nav" aria-label="Navegación principal"><a href="index.html" aria-current="page">Inicio</a><a href="rutas.html">Rutas de aprendizaje</a><a href="biblioteca.html">Biblioteca</a><a href="laboratorio.html">Laboratorio</a><a href="acerca.html">Acerca del proyecto</a></nav>
+<section class="portal-hero"><p class="portal-eyebrow">PLATAFORMA EDUCATIVA ABIERTA</p><h1>Aprende ciencia de datos e inteligencia artificial, paso a paso</h1><p>Un espacio gratuito para explorar Python, analizar datos, construir modelos de Machine Learning y experimentar con redes neuronales. No necesitas inscribirte en un curso ni seguir un calendario.</p><a class="portal-action" href="rutas.html">Comenzar a aprender →</a></section>
 
-<nav class="portal-nav" aria-label="Navegación principal">
-  <a href="index.html" aria-current="page">Inicio</a>
-  <a href="taller_2025.html">Data Science con Python</a>
-  <a href="machine_learning_2026.html">Machine Learning</a>
-  <a href="catalogo.html">Catálogo completo</a>
-</nav>
-
-
-<div class="portal-hero">
-  <p class="portal-eyebrow">RECURSOS EDUCATIVOS ABIERTOS</p>
-  <h1>Aprende Data Science y Machine Learning</h1>
-  <p>Explora materiales prácticos de Python, análisis de datos, aprendizaje automático y redes neuronales. Aprende a tu propio ritmo: no necesitas participar en un curso formal.</p>
-  <a class="portal-action" href="catalogo.html">Explorar todos los recursos &rarr;</a>
-</div>
-
-## Explora las áreas de aprendizaje
+## Elige cómo quieres aprender
 
 <div class="portal-grid">
-  <section class="portal-card">
-    <div class="portal-card-icon">01 / DATOS</div>
-    <h3>Fundamentos de Data Science con Python</h3>
-    <p>Programación, exploración y visualización de datos, introducción a modelos predictivos y actividades prácticas.</p>
-    <p class="portal-meta">Presentaciones · Notebooks · Datasets · Ejercicios</p>
-    <a href="taller_2025.html">Explorar recursos &rarr;</a>
-  </section>
-  <section class="portal-card">
-    <div class="portal-card-icon">02 / MODELOS</div>
-    <h3>Machine Learning y Deep Learning</h3>
-    <p>Clasificación, redes neuronales, procesamiento de imágenes, modelos convolucionales y despliegue de aplicaciones.</p>
-    <p class="portal-meta">Presentaciones · Notebooks · Datasets · Actividades</p>
-    <a href="machine_learning_2026.html">Explorar recursos &rarr;</a>
-  </section>
+<a class="portal-feature" href="rutas.html"><span class="portal-feature-label">APRENDER CON UNA SECUENCIA</span><h3>Rutas de aprendizaje</h3><p>Recorre contenidos desde los fundamentos hasta el despliegue de modelos, con objetivos y prácticas sugeridas.</p><strong>Explorar rutas →</strong></a>
+<a class="portal-feature" href="biblioteca.html"><span class="portal-feature-label">ENCONTRAR UN MATERIAL</span><h3>Biblioteca de recursos</h3><p>Localiza notebooks, datasets, presentaciones y guías por su utilidad, sin tener que conocer la estructura de GitHub.</p><strong>Consultar biblioteca →</strong></a>
+<a class="portal-feature" href="laboratorio.html"><span class="portal-feature-label">EXPERIMENTAR EN EL NAVEGADOR</span><h3>Laboratorio interactivo</h3><p>Manipula parámetros, observa arquitecturas y contrasta resultados en tres simuladores.</p><strong>Abrir laboratorio →</strong></a>
+<a class="portal-feature" href="acerca.html"><span class="portal-feature-label">CONOCER EL PROYECTO</span><h3>Acerca de esta iniciativa</h3><p>Descubre cómo se organizan los materiales, su procedencia, autoría y las condiciones de reutilización.</p><strong>Conocer más →</strong></a>
 </div>
 
-## Recursos para aprender haciendo
+## ¿Por dónde comenzar?
 
-<div class="portal-grid portal-grid-three">
-  <section class="portal-mini-card">
-    <h3>Notebooks</h3>
-    <p>Ejercicios ejecutables en Google Colab, desde los fundamentos hasta aplicaciones.</p>
-    <a href="catalogo.html#notebooks">Ver notebooks &rarr;</a>
-  </section>
-  <section class="portal-mini-card">
-    <h3>Datasets</h3>
-    <p>Conjuntos de datos y diccionarios para practicar análisis y entrenamiento de modelos.</p>
-    <a href="catalogo.html#datasets">Ver datasets &rarr;</a>
-  </section>
-  <section class="portal-mini-card">
-    <h3>Simuladores y guías</h3>
-    <p>Herramientas interactivas para experimentar con CNN y guías para interpretar las métricas de los modelos.</p>
-    <a href="machine_learning_2026.html#simuladores-interactivos">Ver simuladores &rarr;</a>
-  </section>
-</div>
+<div class="portal-steps"><div class="portal-step"><strong>01 · Explora</strong><p>Elige una ruta según lo que ya sabes y lo que quieres construir.</p></div><div class="portal-step"><strong>02 · Practica</strong><p>Abre un notebook en Google Colab o utiliza un simulador interactivo.</p></div><div class="portal-step"><strong>03 · Reflexiona</strong><p>Interpreta tus resultados, revisa las métricas y repite los experimentos.</p></div></div>
 
-<div class="portal-bottom">
-  <div>
-    <h2>Catálogo completo</h2>
-    <p>¿Buscas un archivo específico? Consulta el índice organizado por áreas y tipos de recursos, con enlaces a los materiales disponibles en GitHub.</p>
-  </div>
-  <a class="portal-action" href="catalogo.html">Abrir catálogo &rarr;</a>
-</div>
-
-<p class="portal-footnote">Guías de acceso rápido: <a href="https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/03_Notebooks/README.md">notebooks</a> · <a href="https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/02_Datasets/README.md">datasets</a> · <a href="https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/04_Recursos/README.md">recursos complementarios</a>.</p>
-
-<p class="portal-footnote">Los materiales están disponibles en el <a href="https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python">repositorio público de GitHub</a>. Los notebooks se ejecutan en Google Colab y los simuladores se abren directamente en el navegador.</p>
+<div class="portal-panel"><h2>¿Ya tienes experiencia?</h2><p>Puedes acceder directamente a la <a href="biblioteca.html">biblioteca</a> o al <a href="laboratorio.html">laboratorio</a>. Las rutas son recomendaciones, no requisitos.</p></div>
