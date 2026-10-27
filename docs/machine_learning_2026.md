@@ -3,11 +3,20 @@ layout: default
 title: Machine Learning y Deep Learning
 ---
 
+<link rel="stylesheet" href="assets/css/portal.css">
+
+<nav class="portal-nav" aria-label="Navegación principal">
+  <a href="index.html">Inicio</a>
+  <a href="taller_2025.html">Data Science con Python</a>
+  <a href="machine_learning_2026.html" aria-current="page">Machine Learning</a>
+  <a href="catalogo.html">Catálogo completo</a>
+</nav>
+
+
 # Machine Learning y Deep Learning
 
-[← Inicio](index.html) · [Catálogo completo](catalogo.html)
 
-Materiales para avanzar desde los fundamentos de clasificación y redes neuronales hasta el desarrollo de una **aplicación de clasificación de imágenes**. Cada recurso se puede consultar de forma independiente.
+<p class="portal-lead">Avanza desde los fundamentos de clasificación y redes neuronales hasta construir una aplicación de clasificación de imágenes. Elige tu punto de partida y aprende a tu propio ritmo.</p>
 
 ## Ruta sugerida de aprendizaje
 
@@ -53,4 +62,3 @@ El [material de actividades](https://github.com/juliopez/Taller-Fundamentos-Data
 
 ---
 
-[← Inicio](index.html) · [Catálogo completo](catalogo.html)
