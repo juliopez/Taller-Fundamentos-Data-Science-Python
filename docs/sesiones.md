@@ -8,12 +8,8 @@ description: Revisa los contenidos, objetivos y enfoque de trabajo de cada una d
 
 <link rel="stylesheet" href="assets/css/portal.css">
 
-<nav class="portal-nav" aria-label="Navegación principal">
-<a href="index.html">Inicio</a>
-<a href="taller_2025.html">Data Science con Python</a>
-<a href="machine_learning_2026.html">Machine Learning</a>
-<a href="catalogo.html">Catálogo completo</a>
-</nav>
+<nav class="portal-nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="rutas.html">Rutas de aprendizaje</a><a href="biblioteca.html">Biblioteca</a><a href="laboratorio.html">Laboratorio</a><a href="acerca.html">Acerca del proyecto</a></nav>
+<p class="portal-context"><a href="rutas.html">Rutas de aprendizaje</a> / Guía de sesiones originales. Esta página conserva documentación de origen; para comenzar sin conocimientos previos, consulta las rutas.</p>
 
 
 # Sesiones del taller
