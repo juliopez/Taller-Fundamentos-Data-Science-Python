@@ -3,11 +3,20 @@ layout: default
 title: Fundamentos de Data Science con Python
 ---
 
+<link rel="stylesheet" href="assets/css/portal.css">
+
+<nav class="portal-nav" aria-label="Navegación principal">
+  <a href="index.html">Inicio</a>
+  <a href="taller_2025.html" aria-current="page">Data Science con Python</a>
+  <a href="machine_learning_2026.html">Machine Learning</a>
+  <a href="catalogo.html">Catálogo completo</a>
+</nav>
+
+
 # Fundamentos de Data Science con Python
 
-[← Inicio](index.html) · [Catálogo completo](catalogo.html)
 
-Recursos para aprender Python, análisis exploratorio de datos, Machine Learning y fundamentos de Deep Learning mediante actividades prácticas y un proyecto integrador.
+<p class="portal-lead">Aprende Python, análisis exploratorio de datos, Machine Learning y fundamentos de Deep Learning mediante recursos prácticos que puedes explorar a tu ritmo.</p>
 
 ## Documentación
 
@@ -71,4 +80,3 @@ Recursos para aprender Python, análisis exploratorio de datos, Machine Learning
 
 - [Apuntes de clases — notebook](https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Apuntes_Clases.ipynb) · [Abrir en Colab](https://colab.research.google.com/github/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Apuntes_Clases.ipynb)
 
-[← Inicio](index.html) · [Catálogo completo](catalogo.html)
