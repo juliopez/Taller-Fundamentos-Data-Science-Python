@@ -72,3 +72,17 @@ body{min-width:320px}
 .portal-grid{align-items:stretch}
 .portal-card,.portal-mini-card{min-width:0}
 @media(max-width:760px){.main-content,main.main-content{width:calc(100% - 20px)!important;margin:12px auto 24px!important;padding:18px!important}.page-header,header.page-header{padding:16px 12px!important}.portal-hero{padding:26px 22px}}
+
+/* Arquitectura editorial v2: componentes de acceso para visitantes externos */
+.portal-feature{display:block;min-width:0;background:#fff;border:1px solid #dce5eb;border-radius:14px;padding:28px;color:#203c50!important;text-decoration:none!important;box-shadow:0 5px 22px rgba(19,46,64,.055);transition:transform .18s ease,box-shadow .18s ease}
+.portal-feature:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(19,46,64,.11)}
+.portal-feature h3{font-size:1.35rem;margin:12px 0!important;color:#203c50!important}
+.portal-feature p{color:#4a5e6d;line-height:1.6}
+.portal-feature strong{color:#126187}
+.portal-feature-label{font-size:.74rem;letter-spacing:.09em;color:#53788e;font-weight:800}
+.portal-context{background:#f4f8fa;border-left:3px solid #126187;border-radius:5px;padding:10px 14px;color:#4a5e6d;font-size:.87rem;margin:0 0 24px}
+.portal-nav{gap:4px}
+.portal-nav a{font-size:.86rem;white-space:normal}
+.portal-steps p{margin:4px 0 0;color:#4a5e6d}
+@media(max-width:760px){.portal-feature{padding:20px}.portal-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.portal-nav a{justify-content:center;text-align:center;font-size:.82rem}}
+@media(prefers-reduced-motion:reduce){.portal-feature{transition:none}}
