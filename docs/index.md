@@ -8,7 +8,7 @@ title: Inicio
 <div class="portal-hero">
   <p class="portal-eyebrow">RECURSOS EDUCATIVOS ABIERTOS</p>
   <h1>Aprende Data Science y Machine Learning</h1>
-  <p>Explora materiales prácticos de Python, análisis de datos, aprendizaje automático y redes neuronales. Un espacio abierto para estudiantes, docentes y profesionales.</p>
+  <p>Explora materiales prácticos de Python, análisis de datos, aprendizaje automático y redes neuronales. Aprende a tu propio ritmo: no necesitas participar en un curso formal.</p>
   <a class="portal-action" href="catalogo.html">Explorar todos los recursos &rarr;</a>
 </div>
 
@@ -45,8 +45,8 @@ title: Inicio
     <a href="catalogo.html#datasets">Ver datasets &rarr;</a>
   </section>
   <section class="portal-mini-card">
-    <h3>Simuladores</h3>
-    <p>Herramientas interactivas para comprender redes neuronales y experimentar con CNN.</p>
+    <h3>Simuladores y guías</h3>
+    <p>Herramientas interactivas para experimentar con CNN y guías para interpretar las métricas de los modelos.</p>
     <a href="machine_learning_2026.html#simuladores-interactivos">Ver simuladores &rarr;</a>
   </section>
 </div>
@@ -58,5 +58,7 @@ title: Inicio
   </div>
   <a class="portal-action" href="catalogo.html">Abrir catálogo &rarr;</a>
 </div>
+
+<p class="portal-footnote">Guías de acceso rápido: <a href="https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/03_Notebooks/README.md">notebooks</a> · <a href="https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/02_Datasets/README.md">datasets</a> · <a href="https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python/blob/main/Machine_Learning_2026/04_Recursos/README.md">recursos complementarios</a>.</p>
 
 <p class="portal-footnote">Los materiales están disponibles en el <a href="https://github.com/juliopez/Taller-Fundamentos-Data-Science-Python">repositorio público de GitHub</a>. Los notebooks se ejecutan en Google Colab y los simuladores se abren directamente en el navegador.</p>
