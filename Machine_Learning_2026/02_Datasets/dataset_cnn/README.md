@@ -1,6 +1,6 @@
 # Dataset de imágenes para la primera CNN: Piedra, papel o tijera
 
-Este directorio contiene el conjunto de imágenes que utilizaremos en la actividad práctica de **introducción a las redes neuronales convolucionales (CNN)** del curso *Machine Learning 2026*.
+Este directorio contiene el conjunto de imágenes que utilizaremos en la actividad práctica de **introducción a las redes neuronales convolucionales (CNN)** de aprendizaje autónomo.
 
 En experiencias anteriores trabajamos con **redes neuronales densas (MLP) y datos numéricos estructurados**. En esta actividad utilizaremos **imágenes** y aprenderemos cómo las capas convolucionales extraen características visuales antes de la clasificación.
 
@@ -45,12 +45,12 @@ dataset_cnn/
     └── scissors/    # 50 imágenes
 ```
 
-## 3. Actividad del estudiante: cargar imágenes en Google Colab
+## 3. Cómo cargar las imágenes en Google Colab
 
-En esta experiencia **no utilizaremos Google Drive**. Descargaremos los archivos del repositorio y los cargaremos manualmente al entorno temporal de Google Colab.
+Para reproducir el procedimiento del NB04 **no es necesario utilizar Google Drive**. Descarga los archivos del repositorio y cárgalos manualmente al entorno temporal de Google Colab.
 
 1. Descarga los tres ZIP desde los enlaces de la sección anterior (en la página de cada archivo, utiliza la opción de descarga).
-2. Abre el notebook de la actividad en **Google Colab**.
+2. Abre el [NB04 — Introducción práctica a las CNN](../../03_Notebooks/NB04_Introduccion_Practica_CNN.ipynb) en **Google Colab**.
 3. Ejecuta la celda de carga de archivos; cuando aparezca el selector, elige los **tres ZIP** descargados.
 4. Ejecuta la celda que descomprime los archivos en `/content/`.
 5. Verifica la existencia de las carpetas `train/rock`, `train/paper`, `train/scissors` y sus equivalentes en `test/`.
