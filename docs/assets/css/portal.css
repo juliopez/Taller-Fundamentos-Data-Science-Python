@@ -55,3 +55,20 @@ body{background:#f7fafb;color:var(--ds-ink)}
 .portal-card:hover,.portal-mini-card:hover,.portal-step:hover{box-shadow:0 10px 24px rgba(19,46,64,.1);transform:translateY(-2px)}
 @media(max-width:760px){.portal-steps{grid-template-columns:1fr}.main-content{padding:20px}.portal-nav{gap:4px}.portal-nav a{padding:7px 10px}.page-header{padding:1.6rem 1rem!important}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.portal-card,.portal-mini-card,.portal-step{transition:none}}
+
+/* Corrección visual validada a partir de captura del portal público */
+html,body{margin:0!important;padding:0!important;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif!important;font-size:16px}
+body{min-width:320px}
+.page-header,header.page-header{box-sizing:border-box;max-width:none!important;margin:0!important;text-align:center;padding:20px 16px!important;background:linear-gradient(120deg,#14283d,#244a62)!important}
+.page-header .project-name,.page-header h1{font:700 clamp(1.15rem,2vw,1.65rem)/1.3 system-ui,sans-serif!important;margin:0 0 6px!important;color:#fff!important}
+.page-header .project-tagline,.page-header h2{font:400 .94rem/1.5 system-ui,sans-serif!important;color:#dcebf2!important;margin:0!important}
+.page-header .btn{font:600 .83rem system-ui,sans-serif!important;padding:7px 12px!important;margin:8px 0 0!important}
+.main-content,main.main-content{box-sizing:border-box;width:min(100% - 36px,1180px)!important;max-width:1180px!important;margin:24px auto 40px!important;padding:clamp(22px,3vw,42px)!important;background:#fff!important;border:1px solid #e5edf1;border-radius:16px;box-shadow:0 10px 36px rgba(20,40,61,.065);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif!important}
+.main-content h1,.main-content h2,.main-content h3,.main-content p,.main-content li,.main-content a{font-family:inherit}
+.main-content .portal-hero h1,.portal-hero h1{color:#fff!important;opacity:1!important;text-shadow:none!important;font-size:clamp(2rem,4vw,3.25rem)!important;line-height:1.16!important;letter-spacing:-.035em!important}
+.main-content .portal-hero p{color:#e0eaf0!important}
+.main-content .portal-hero .portal-eyebrow{color:#a8d7e8!important}
+.portal-hero{margin-top:4px}
+.portal-grid{align-items:stretch}
+.portal-card,.portal-mini-card{min-width:0}
+@media(max-width:760px){.main-content,main.main-content{width:calc(100% - 20px)!important;margin:12px auto 24px!important;padding:18px!important}.page-header,header.page-header{padding:16px 12px!important}.portal-hero{padding:26px 22px}}
