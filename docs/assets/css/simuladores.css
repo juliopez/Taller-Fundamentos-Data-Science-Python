@@ -1,0 +1,17 @@
+/* Identidad visual compartida de los simuladores. No modifica su lógica JavaScript. */
+:root{--brand-navy:#14283d;--brand-blue:#126187;--brand-accent:#f2a65a;--brand-line:#dce5eb}
+html{scroll-behavior:smooth}
+.sim-site-nav{box-sizing:border-box;display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--brand-navy);border-bottom:3px solid var(--brand-accent);padding:11px max(18px,calc((100vw - 1200px)/2));font:600 14px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;color:#d6e8f1}
+.sim-site-nav a{display:inline-flex;align-items:center;min-height:38px;padding:8px 12px;border-radius:8px;color:#fff!important;text-decoration:none!important}
+.sim-site-nav a:hover{background:#244a62;color:#fff!important}
+.sim-site-nav .sim-current{font-weight:500;color:#c8e0eb}
+button,input,select,textarea{font-family:inherit}
+button{min-height:38px}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid var(--brand-accent)!important;outline-offset:3px}
+table{max-width:100%}
+pre{max-width:100%;overflow-x:auto}
+@media(max-width:650px){.sim-site-nav{padding:9px 12px;gap:3px}.sim-site-nav a{padding:8px}.sim-site-nav .sim-current{display:none}main{max-width:100%;overflow-wrap:break-word}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* Homologación visual de encabezados sin alterar las superficies de simulación. */
+body>header{border-bottom:1px solid rgba(100,150,175,.18)}
+body>header h1{letter-spacing:-.025em;line-height:1.18}
