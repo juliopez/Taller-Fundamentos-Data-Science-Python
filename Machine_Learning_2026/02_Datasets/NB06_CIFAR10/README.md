@@ -14,7 +14,7 @@
 | Resolución original | 32 × 32 píxeles |
 | Unidad de análisis | Una imagen |
 | Selección prevista | 20 imágenes (2 por categoría, 10 categorías) |
-| Estado del inventario | Pendiente: al crear este README, la carpeta solo contenía `.gitnone`; las imágenes aún no se habían incorporado |
+| Estado del inventario | Verificado en GitHub: 20 imágenes PNG, 2 por cada una de las 10 categorías, más `etiquetas.csv` |
 
 ## 2. Propósito pedagógico
 
@@ -32,7 +32,7 @@ La segunda parte del NB06 permitirá repetir la experiencia con imágenes del da
 | `categoria` | Texto categórico | Etiqueta de referencia CIFAR-10 de la imagen | `gato` |
 | `imagen` | Imagen RGB | Matriz de píxeles de 32 × 32 × 3 | Archivo PNG |
 
-Las variables `archivo` y `categoria` pueden registrarse en `etiquetas.csv`, si se conserva el archivo generado con la muestra. La estructura exacta debe cotejarse una vez cargadas las imágenes.
+Las variables `archivo` y `categoria` están registradas en `etiquetas.csv`, incorporado junto con las imágenes.
 
 ## 4. Categorías previstas
 
@@ -50,7 +50,7 @@ Las variables `archivo` y `categoria` pueden registrarse en `etiquetas.csv`, si 
 | 9 | truck | camion | 2 |
 | **Total** | **10 categorías** | | **20** |
 
-## 5. Estructura prevista de archivos
+## 5. Estructura de archivos verificada
 
 ```text
 NB06_CIFAR10/
@@ -75,7 +75,7 @@ Cada carpeta representa la categoría de referencia. Para el análisis se puede 
 
 La muestra planificada procede de CIFAR-10, que contiene imágenes de diez clases. Se ha definido una selección pequeña de **dos ejemplos por categoría** para privilegiar la observación, comparación y discusión de resultados sobre el volumen de datos.
 
-La selección se realizó o realizará mediante un script a partir del lote de prueba de CIFAR-10, tomando las primeras dos imágenes encontradas de cada clase. **La incorporación de los archivos y su correspondencia con este criterio aún debe verificarse en GitHub.**
+La selección se realizó mediante un script a partir del lote de prueba de CIFAR-10, tomando las primeras dos imágenes encontradas de cada clase. **Se verificó en GitHub la existencia de las diez carpetas y de dos archivos PNG por categoría.**
 
 ## 7. Consideraciones metodológicas
 
@@ -93,4 +93,4 @@ La selección se realizó o realizará mediante un script a partir del lote de p
 4. Comparar predicciones y analizar aciertos, errores y confianza.
 5. Repetir el procedimiento con un dataset propio de NB05.
 
-> **Control de integridad pendiente:** verificar que existan diez carpetas con dos imágenes cada una y, si corresponde, un `etiquetas.csv`; actualizar este diccionario si la estructura finalmente cargada difiere de la prevista.
+> **Control de integridad realizado:** se verificó en GitHub la presencia de diez carpetas, dos imágenes PNG por carpeta y el archivo `etiquetas.csv`.
